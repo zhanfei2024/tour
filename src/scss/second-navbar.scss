@@ -1,0 +1,54 @@
+@import 'vars';
+.second-navbar {
+    border-bottom: 1px solid $border-color-base;
+}
+.tour-logo {
+    height: 100px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .logo {
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+    .web-title {
+        font-size: 28px;
+    }
+    .web-purpose {
+        font-size: 14px;
+    }
+}
+.home-list {
+    line-height: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    a {
+        color: $primary-color;
+        margin: 0 20px;   
+    }
+    a:hover {
+        color: $link-hover-color;   
+    }
+}
+
+.top-nav-service {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.search {
+    width: 250px;
+    height: 38px;
+    border-radius: 19px;
+}
+.contact-phone {
+    font-size: 20px;
+    font-weight: 700;
+}
+.service-time {
+    font-size: 14px;
+}
+

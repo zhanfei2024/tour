@@ -1,0 +1,46 @@
+.user-login {
+    background-image: url('http://via.placeholder.com/1800x600');
+    background-size: cover;
+}
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+.user-login-inner {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.form-wrapper {
+    background-color: $tooltip-color;
+    border: 1px solid $border-color-base;
+    margin: 0 -15px;
+    padding: 40px;
+}
+.form-title {
+    font-size: 20px;
+    line-height: 40px;
+}
+.submit-login {
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+    background-color: $body-background;
+    color: $link-hover-color;
+    border: 1px solid $link-hover-color;
+
+}
+.submit-login:hover {
+    background-color: $link-hover-color;
+    color: $tooltip-color;
+    border: 1px solid $link-hover-color;
+}
+.form-add {
+    a {
+        font-size: 14px;
+        color: $link-hover-color;
+    }
+}

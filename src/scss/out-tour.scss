@@ -1,0 +1,25 @@
+.out-tour {
+    background-color: $background-color-base;
+}
+.hot-recommend, .out-follow-tour, .out-help-tour {
+    padding: 20px;
+    background-color: $body-background;
+    border: 1px solid $border-color-base;
+}
+.hot-title, .help-title, .follow-title {
+    font: 650 20px $font-family ;
+    line-height: 40px;
+}
+
+.conutry-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.country-logo {
+    border-radius: 8px;
+}
+.country-name {
+    line-height: 48px;
+    text-align: center;
+}

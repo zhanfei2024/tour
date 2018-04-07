@@ -1,0 +1,13 @@
+html,body, #app, .full-layout, .simple-layout {
+    height: 100%;
+}
+ .full-layout-wrapper, .simple-layout-wrapper {
+    min-height: 100%;
+}
+ .full-layout-wrapper, .simple-layout-wrapper{
+    padding-bottom: 245px;
+}
+.custom-footer {
+    height: 245px;
+    margin-top: -245px;
+}

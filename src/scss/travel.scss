@@ -1,0 +1,67 @@
+.home-travel {
+    background-color: $background-color-second;
+}
+.address-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px;
+    border: 1px solid $border-color-base;
+    background: $body-background;
+    font-size: 14px;
+}
+.location-title {
+    line-height: 24px;
+}
+.location-item {
+    float: left;
+    padding: 0 20px;
+    line-height: 24px;
+}
+.location-item:hover  {
+    color: $link-hover-color;
+    cursor: pointer;
+}
+
+.travel-list {
+    padding: 20px;
+    border: 1px solid $border-color-base;
+    background: $body-background;
+    font-size: 14px;
+}
+
+.second-filter{
+    margin-bottom: 20px;
+}
+.second-title {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 1px solid $border-color-base;
+}
+.second-title:hover {
+    background: $link-hover-color;
+    color: $tooltip-color;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.travel-pic {
+    display: block;
+    margin: 40px auto 0;
+}
+.travel-wrapper {
+    margin: 0 -15px;
+}
+.travel-name {
+    line-height: 40px;
+    vertical-align: middle;
+    height: 40px;
+    color: $primary-color;
+}
+.travel-card-inner {
+    margin-bottom: 20px;
+    border: 1px solid $border-color-base;
+}
+.travel-card-inner:hover {
+    box-shadow: $shadow-base;
+    cursor: pointer;
+}

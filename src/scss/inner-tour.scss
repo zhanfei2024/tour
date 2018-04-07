@@ -1,0 +1,26 @@
+.inner-filter, .inner-tour-list, .inner-tour-item {
+    padding: 20px;
+    border: 1px solid $border-color-base;
+}
+.inner-tour-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.inner-info {
+    h1 {
+        font-size: 14px;
+        line-height: 40px;
+
+    }
+}
+.inner-tour-wrapper{
+    margin: 0 -15px;
+}

@@ -1,0 +1,43 @@
+.user-navbar-page {
+    background-color: $background-color-base;
+}
+.user-navbar-wrapper {
+    margin: 0 -15px;
+}
+.user-navbar {
+    border: 1px solid $border-color-base;
+    background: $body-background;
+    color: $primary-color;
+    padding: 20px 0;
+    margin-right: 20px;
+    .big-title {
+        a {
+            font-size: 18px;
+            font-weight: 700;
+            color: $primary-color;
+        }
+    }
+    li {
+        padding-left: 50px;
+        font-size: 14px;
+        line-height: 40px;
+        height: 40px;
+        width: 100%;
+        border-left: 3px solid transparent;
+    }
+    .active {
+        border-color: $link-active-color;
+        color: $link-active-color;
+    }
+    li:hover {
+        cursor: pointer;
+        color: $link-hover-color;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .user-navbar {
+        width: 220px;
+    }
+}

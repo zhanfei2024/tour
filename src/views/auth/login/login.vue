@@ -77,6 +77,15 @@ export default {
         this.$refs[name].validate((valid) => {
             if (valid) {
                 this.$Message.success('Success!');
+                switch (this.$route.path) {
+                    case '/user-login':
+                        this.$router.push({name: 'center', params: {id: 123}});
+                        break;
+                    case '/travel-login':
+                        this.$router.push({name: 'account', params: {id: 123}});
+                        break;
+                }
+                
             } else {
                 this.$Message.error('Fail!');
             }

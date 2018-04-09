@@ -28,46 +28,6 @@
     }
 
 }
-// tour card
-.tour-card-wrapper {
-    margin: 0 -15px;
-}
-.tour-card-inner {
-    display: block;
-    position: relative;
-    margin: 10px 0;
-    border: 1px solid $border-color-base;
-}
-.tour-card-inner:hover {
-    box-shadow: $shadow-card  
-}
-.tour-tag {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.tour-pic{
-    width: 100%;
-}
-.tour-summary, {
-    font: 14px $font-family;
-    color: $primary-color;
-    border-bottom: 1px solid $border-color-base;
-}
-.tour-summary, .tour-info {
-    padding: 20px;
-    color: $primary-color;
-}
-.tour-price {
-    font: 400 20px $font-family;
-    color: $price-color
-}
-.tour-tag {
-    font: 400 $font-family;
-    padding: 0 6px;
-    line-height: 18px;
-    background: $warning-color;
-    color: $tooltip-color;
-}
+
 
 

@@ -12,6 +12,11 @@
                     <span class="tour-price pull-left">{{item.price}}元起</span>
                     <span class="start-address pull-right">{{item.start}}</span>
                 </p>
+                <p v-if="item.comment" class="tour-comment">
+                    <Button class="comment-btn" type="primary">
+                        <router-link :to="'/user/123/comment-detail/123'">发布评价</router-link>
+                    </Button>
+                </p>
                 <p class="tour-tag">
                     {{item.tag}}
                 </p>

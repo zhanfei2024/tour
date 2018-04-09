@@ -4,39 +4,7 @@
     <div class="custom-card margin-bottom-20">
       <h1 class="card-title">我的订单</h1>
       <div class="card-box">
-        <div class="card-item margin-bottom-20">
-          <div class="tour-item">
-            <img class="tour-img" src="http://via.placeholder.com/80x80">
-            <section class="tour-text">
-              <h1 class="tour-title">大西洋旅游</h1>
-              <p class="tour-introduce"><span class="tour-object">产品类型：跟团游</span><span class="tour-start">出发地：广州</span><span class="tour-num">出行人数：2成人</span></p>
-              <p class="tour-time">出发时间：2017023033(星期二)</p>
-            </section>
-          </div>
-          <div class="tour-status">
-            等待商家确认
-          </div>
-          <div class="tour-price">
-            2999.00
-          </div>
-        </div>
-
-        <div class="card-item margin-bottom-20">
-          <div class="tour-item">
-            <img class="tour-img" src="http://via.placeholder.com/80x80">
-            <section class="tour-text">
-              <h1 class="tour-title">大西洋旅游</h1>
-              <p class="tour-introduce"><span class="tour-object">产品类型：跟团游</span><span class="tour-start">出发地：广州</span><span class="tour-num">出行人数：2成人</span></p>
-              <p class="tour-time">出发时间：2017023033(星期二)</p>
-            </section>
-          </div>
-          <div class="tour-status">
-            等待商家确认
-          </div>
-          <div class="tour-price">
-            2999.00
-          </div>
-        </div>
+        <order-item :orders="orders"></order-item>
       </div>
     </div>
 
@@ -52,6 +20,7 @@
 
 <script type="text/ecmascript-6">
 import TourCard from '../../../home/tour-card/tour-card.vue'
+import OrderItem from '../../common/order-item/order-item.vue'
 export default {
     name: 'Center',
   data() {
@@ -155,10 +124,26 @@ export default {
           },
           
       ],
+      orders: [
+        {
+          id: '22222222',
+          orderTime: '2018-09-12',
+          imgUrl: 'http://via.placeholder.com/80x80',
+          tourTitle: '泰国五日游',
+          tourObject: '跟团游',
+          tourStart: '深圳',
+          adultNum: '2',
+          childrenNum: '1',
+          TourTime: '2018-5-1',
+          tourStatus: '待商家确认',
+          tourPrice: '2999'
+        }
+      ]
     }
   },
   components: {
-    TourCard
+    TourCard,
+    OrderItem
   }
 }
 </script>

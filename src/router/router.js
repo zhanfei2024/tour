@@ -168,10 +168,10 @@ const user = {
                 {
                     path: 'comment',
                     name: 'comment',
-                    comment: () => import('../views/user/deal/comment/comment.vue')
+                    component: () => import('../views/user/deal/comment/comment.vue')
                 },
                 {
-                    path: 'comment-detail/:id',
+                    path: 'comment-detail/123',
                     name: 'comment-detail',
                     component: () => import('../views/user/deal/comment-detail/comment-detail.vue')
                 },

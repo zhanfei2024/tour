@@ -151,9 +151,9 @@ const user = {
                     component: () => import('../views/user/account/safe-list/safe-list.vue')
                 },
                 {
-                    path: 'safe-set',
-                    name: 'sade-set',
-                    component: () => import('../views/user/account/safe-set/safe-set.vue')
+                    path: 'phone-set',
+                    name: 'phone-set',
+                    component: () => import('../views/user/account/phone-set/phone-set.vue')
                 },
                 {
                     path: 'order',

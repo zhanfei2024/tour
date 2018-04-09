@@ -3,7 +3,7 @@
       <div class="container">
           <div class="row">
                 <div class="user-navbar-wrapper">
-                    <div class="user-navbar pull-left">
+                    <div class="user-navbar col-xs-12 col-sm-12 col-md-2">
                        <ul class="nav-list">
                            <li class="nav-item big-title"><a>我的账户</a></li>
                            <router-link tag="li" active-class="active" :to="'/user/123/center'">个人中心</router-link>
@@ -17,7 +17,7 @@
                            <router-link tag="li" active-class="active" :to="'/user/123/collection-travel'">收藏的旅行社</router-link>
                         </ul>
                     </div>
-                    <router-view>
+                    <router-view class="col-xs-12 col-sm-12 col-md-10">
 
                     </router-view>
                 </div>

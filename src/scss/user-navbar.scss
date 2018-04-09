@@ -1,15 +1,14 @@
 .user-navbar-page {
+
     background-color: $background-color-base;
 }
 .user-navbar-wrapper {
     margin: 0 -15px;
 }
-.user-navbar {
-    border: 1px solid $border-color-base;
+.nav-list {
+    border: 1px solid $border-color-light;
     background: $body-background;
     color: $primary-color;
-    padding: 20px 0;
-    margin-right: 20px;
     .big-title {
         a {
             font-size: 18px;
@@ -34,10 +33,4 @@
         color: $link-hover-color;
     }
 
-}
-
-@media (min-width: 992px) {
-    .user-navbar {
-        width: 220px;
-    }
 }

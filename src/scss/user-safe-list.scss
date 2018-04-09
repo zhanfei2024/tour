@@ -1,0 +1,32 @@
+.user-safe-list-page {
+    .safe-item {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $border-color-light;
+    }
+    .safe-logo {
+        i {
+            font-size: 40px;
+        }
+    }
+    .safe-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .safe-logo {
+        margin-right: 20px;
+    }
+    .safe-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .safe-info {
+        line-height: 24px;
+    }
+
+}

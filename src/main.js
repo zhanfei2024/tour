@@ -6,12 +6,14 @@ import router from './router'
 import iView from'iview'
 import 'iview/dist/styles/iview.css'
 import './assets/css/full-layout.css'
+import VueEditorMarkdown from 'vue-editor-markdown'
 
 
 
 
 Vue.config.productionTip = false
 Vue.use(iView)
+Vue.use(VueEditorMarkdown)
 
 /* eslint-disable no-new */
 new Vue({

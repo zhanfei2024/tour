@@ -74,15 +74,16 @@ export default {
         }
     },
     handleSubmit(name) {
+        const userId = 123;
         this.$refs[name].validate((valid) => {
             if (valid) {
                 this.$Message.success('Success!');
                 switch (this.$route.path) {
                     case '/user-login':
-                        this.$router.push({name: 'center', params: {id: 123}});
+                        this.$router.push({ path: `/user/${userId}/center` });
                         break;
                     case '/travel-login':
-                        this.$router.push({name: 'account', params: {id: 123}});
+                        this.$router.push({ path: `/enterprise/${userId}/center` });
                         break;
                 }
                 

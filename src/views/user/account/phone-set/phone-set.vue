@@ -4,31 +4,18 @@
     <div class="custom-card">
         <h1 class="card-title">更换手机号码</h1>
         <div class="card-box">
-            <div v-if="currentNum === 1  || currentNum === 2" class="steps">
-                <div class="step" :class="{active: currentNum === 1}">
-                    <div class="step-cricle">1</div>
-                    <p class="step-text">验证身份</p>
-                </div>
-                <div class="step" :class="{active: currentNum === 2}">
-                    <div class="step-cricle">2</div>
-                    <p class="step-text">修改手机号码</p>
-                </div>
-                <div class="step" :class="{active: currentNum === 3}">
-                    <div class="step-cricle">3</div>
-                    <p class="step-text">完成更换</p>
-                </div>
-            </div>
-            <div v-if="currentNum === 1  || currentNum === 2" class="form-list">
+            <custom-progress :progress="progress"></custom-progress>
+            <div v-show="progress.currentNum === 1  || progress.currentNum === 2" class="form-list">
                 <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-                    <FormItem v-if="currentNum === 1" label="验证码" prop="code">
+                    <FormItem v-show="progress.currentNum === 1" label="验证码" prop="code">
                         <Input v-model="formValidate.code" :placeholder="codePlaceholder">
                         </Input>
                         <div class="phone-code text-right" @click="setCode()">{{codeStatus}}</div>
                     </FormItem>
-                    <FormItem v-if="currentNum === 2" label="手机号码" prop="phone">
+                    <FormItem v-show="progress.currentNum === 2" label="手机号码" prop="phone">
                         <Input v-model="formValidate.code" placeholder="Enter your phone"></Input>
                     </FormItem>
-                    <FormItem v-if="currentNum === 2" label="验证码" prop="code">
+                    <FormItem v-show="progress.currentNum === 2" label="验证码" prop="code">
                         <Input v-model="formValidate.code" placeholder="Enter your code"></Input>
                     </FormItem>
                     <FormItem>
@@ -37,7 +24,7 @@
                     </FormItem>
                 </Form>
             </div>
-            <div v-if="currentNum === 3" class="success">
+            <div v-show="progress.currentNum === 3" class="success">
                <div class="success-logo">
                    <Icon type="checkmark-circled"></Icon>
                </div>
@@ -48,16 +35,24 @@
                <Button class="success-button" type="primary"><router-link :to="'/user/123/safe'">返回</router-link></Button>
             </div>
         </div>
+
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+import CustomProgress from '../../../common/custom-progress/custom-progress.vue'
 export default {
     name: 'phone-set',
   data() {
     return {
-        currentNum: 1,
+
+        progress: {
+            currentNum: 1,
+            step1: '验证身份',
+            step2: '修改手机号码',
+            step3: '完成更换'
+        },
         codePlaceholder: 'Enter your code',
         codeStatus: '发送验证码',
         codeTime: '',
@@ -132,12 +127,12 @@ export default {
             this.$refs[name].resetFields();
         },
         handleStep() {
-            this.currentNum++;
+            this.progress.currentNum++;
             console.log(this.currentNum, '-----------')
         }
     },
   components: {
-
+    CustomProgress
   }
 }
 </script>

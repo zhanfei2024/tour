@@ -1,0 +1,36 @@
+
+    .inner-line-page, .hot-line-page  {
+    float: left;
+    }
+    .inner-line-page {
+        padding-right: 15px;
+    }
+    .hot-line-page {
+        padding-left: 15px;
+    }
+    @media (min-width: 992px) {
+        .inner-line-page {
+            width: 75%
+        }
+        .hot-line-page  {
+            width: 25%
+        }
+    }
+    @media (max-width: 992px) and (min-width: 782px) {
+        .inner-line-page {
+            width: 75%
+        }
+        .hot-line-page  {
+            width: 25%
+        }
+    }
+    @media (max-width: 782px) {
+        .inner-line-page {
+            width: 100%
+        }
+        .hot-line-page  {
+            width: 100%
+        }
+    }
+
+

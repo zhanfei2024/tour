@@ -1,15 +1,34 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-const router = require('./router')
+const route = require('./router')
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
-    router.auth,
-    router.index,
-    router.travel,
-    router.user,
-    router.enterprise
+    route.auth,
+    route.index,
+    route.travel,
+    route.user,
+    route.enterprise
   ]
+});
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    // this route requires auth, check if logged in
+    // if not, redirect to login page.
+    if (!auth.loggedIn()) {
+      next({
+        path: '/login',
+        query: { redirect: to.fullPath }
+      })
+    } else {
+      next()
+    }
+  } else {
+    next() // 确保一定要调用 next()
+  }
 })
+
+export default router;

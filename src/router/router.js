@@ -68,11 +68,11 @@ const auth = {
 
 const travel = {
     path: '/',
-    name: 'simple-layout',
-    component: () => import('../views/common/simple-layout/simple-layout.vue'),
+    name: 'travel-layout',
+    component: () => import('../views/common/travel-layout/travel-layout.vue'),
     children: [
         {
-            path: '/travel/:id',
+            path: '/travel/123',
             name: 'travel',
             component: () => import('../views/travel/travel-navbar/travel-navbar.vue'),
             children: [
@@ -85,7 +85,7 @@ const travel = {
                     path: 'inner-line',
                     name: 'inner-line',
                     components: {
-                        innerLine: () => import('../views/travel/inner-line/inner-line.vue'),
+                        default: () => import('../views/travel/inner-line/inner-line.vue'),
                         hotLine: () => import('../views/travel/hot-line/hot-line.vue')
                     }
                 },
@@ -93,12 +93,12 @@ const travel = {
                     path: 'out-line',
                     name: 'out-line',
                     components: {
-                        outLine: () => import('../views/travel/out-line/out-line.vue'),
+                        default: () => import('../views/travel/out-line/out-line.vue'),
                         hotLine: () => import('../views/travel/hot-line/hot-line.vue')
                     }
                 },
                 {
-                    path: 'line-detail/:id',
+                    path: 'line-detail/123',
                     name: 'line-detail',
                     component: () => import('../views/travel/line-detail/line-detail.vue')
                 },
@@ -106,7 +106,7 @@ const travel = {
                     path: 'summary',
                     name: 'summary',
                     components: {
-                        summary: () => import('../views/travel/summary/summary.vue'),
+                        default: () => import('../views/travel/summary/summary.vue'),
                         hotLine: () => import('../views/travel/hot-line/hot-line.vue')
                     }
                 },
@@ -114,7 +114,7 @@ const travel = {
                     path: 'connect',
                     name: 'connect',
                     components: {
-                        connect: () => import('../views/travel/connect/connect.vue'),
+                        default: () => import('../views/travel/connect/connect.vue'),
                         hotLine: () => import('../views/travel/hot-line/hot-line.vue')
                     }
                 }
@@ -138,52 +138,62 @@ const user = {
                 {
                     path: 'center',
                     name: 'center',
-                    component: () => import('../views/user/account/center/center.vue')
+                    component: () => import('../views/user/account/center/center.vue'),
+                    meta: { requiresUserAuth: true }
                 },
                 {
                     path: 'profile',
                     name: 'profile',
-                    component: () => import('../views/user/account/profile/profile.vue')
+                    component: () => import('../views/user/account/profile/profile.vue'),
+                    meta: { requiresUserAuth: true }
                 },
                 {
                     path: 'safe',
                     name: 'safe',
-                    component: () => import('../views/user/account/safe-list/safe-list.vue')
+                    component: () => import('../views/user/account/safe-list/safe-list.vue'),
+                    meta: { requiresUserAuth: true }
                 },
                 {
                     path: 'phone-set',
                     name: 'phone-set',
-                    component: () => import('../views/user/account/phone-set/phone-set.vue')
+                    component: () => import('../views/user/account/phone-set/phone-set.vue'),
+                    meta: { requiresUserAuth: true }
                 },
                 {
                     path: 'order',
                     name: 'order',
-                    component: () => import('../views/user/deal/order/order.vue')
+                    component: () => import('../views/user/deal/order/order.vue'),
+                    meta: { requiresUserAuth: true }
                 },
                 {
                     path: 'order-detail/:id',
                     name: 'order-detail',
-                    component: () => import('../views/user/deal/order-detail/order-detail.vue')
+                    component: () => import('../views/user/deal/order-detail/order-detail.vue'),
+                    meta: { requiresUserAuth: true }
                 },
                 {
                     path: 'comment',
                     name: 'comment',
-                    component: () => import('../views/user/deal/comment/comment.vue')
+                    component: () => import('../views/user/deal/comment/comment.vue'),
+                    meta: { requiresUserAuth: true }
                 },
                 {
                     path: 'comment-detail/123',
                     name: 'comment-detail',
-                    component: () => import('../views/user/deal/comment-detail/comment-detail.vue')
+                    component: () => import('../views/user/deal/comment-detail/comment-detail.vue'),
+                    meta: { requiresUserAuth: true }
                 },
                 {
                     path: 'collection-line',
                     name: 'collection-line',
-                    component: () => import('../views/user/collection/line/line.vue')
+                    component: () => import('../views/user/collection/line/line.vue'),
+                    meta: { requiresUserAuth: true }
                 },
                 {
                     path: 'collection-travel',
                     name: 'collection-travel',
-                    component: () => import('../views/user/collection/travel/travel.vue')
+                    component: () => import('../views/user/collection/travel/travel.vue'),
+                    meta: { requiresUserAuth: true }
                 }
             ]
         }
@@ -202,54 +212,64 @@ const enterprise = {
             component: () => import('../views/travel-mange/sidebar/sidebar.vue'),
             children: [
                 {
-                    path: 'account',
-                    name: 'account',
-                    component: () => import('../views/travel-mange/account/center/center.vue')
+                    path: 'center',
+                    name: 'center',
+                    component: () => import('../views/travel-mange/account/center/center.vue'),
+                    meta: { requiresAuth: true }
                 },
                 {
                     path: 'info',
                     name: 'info',
-                    component: () => import('../views/travel-mange/account/info/info.vue')
+                    component: () => import('../views/travel-mange/account/info/info.vue'),
+                    meta: { requiresAuth: true }
                 },
                 {
                     path: 'safe',
                     name: 'safe',
-                    component: () => import('../views/travel-mange/account/safe/safe.vue')
+                    component: () => import('../views/travel-mange/account/safe/safe.vue'),
+                    meta: { requiresAuth: true }
                 },
                 {
                     path: 'safe-set',
                     name: 'safe-set',
-                    component: () => import('../views/travel-mange/account/safe-set/safe-set.vue')
+                    component: () => import('../views/travel-mange/account/safe-set/safe-set.vue'),
+                    meta: { requiresAuth: true }
                 },
                 {
                     path: 'order',
                     name: 'order',
-                    component: () => import('../views/travel-mange/deal/order/order.vue')
+                    component: () => import('../views/travel-mange/deal/order/order.vue'),
+                    meta: { requiresAuth: true }
                 },
                 {
-                    path: 'order-detail/:id',
+                    path: 'order-detail/123',
                     name: 'order-detail',
-                    component: () => import('../views/travel-mange/deal/order-detail/order-detail.vue')
+                    component: () => import('../views/travel-mange/deal/order-detail/order-detail.vue'),
+                    meta: { requiresAuth: true }
                 },
                 {
                     path: 'reply',
                     name: 'reply',
-                    component: () => import('../views/travel-mange/deal/reply/reply.vue')
+                    component: () => import('../views/travel-mange/deal/reply/reply.vue'),
+                    meta: { requiresAuth: true }
                 },
                 {
                     path: 'reply-detail',
                     name: 'reply-detail',
-                    component: () => import('../views/travel-mange/deal/reply-detail/reply-detail.vue')
+                    component: () => import('../views/travel-mange/deal/reply-detail/reply-detail.vue'),
+                    meta: { requiresAuth: true }
                 },
                 {
                     path: 'line',
                     name: 'line',
-                    component: () => import('../views/travel-mange/product/line/line.vue')
+                    component: () => import('../views/travel-mange/product/line/line.vue'),
+                    meta: { requiresAuth: true }
                 },
                 {
                     path: 'carouse',
                     name: 'carouse',
-                    component: () => import('../views/travel-mange/product/carouse/carouse.vue')
+                    component: () => import('../views/travel-mange/product/carouse/carouse.vue'),
+                    meta: { requiresAuth: true }
                 }
             ]
         }

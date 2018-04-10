@@ -4,7 +4,7 @@
         <div class="custom-card">
         <h1 class="card-title">评价订单</h1>
         <div class="card-box">
-            <order-item :orders="orders"></order-item>
+            <!-- <order-item :orders="orders"></order-item> -->
         </div>
         <div class="card-box">
 
@@ -24,7 +24,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-import OrderItem from '../../common/order-item/order-item.vue'
+// import OrderItem from '../../common/order-item/order-item.vue'
 export default {
     name: 'comment',
     data() {

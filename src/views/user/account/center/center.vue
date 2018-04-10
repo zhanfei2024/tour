@@ -4,7 +4,7 @@
     <div class="custom-card margin-bottom-20">
       <h1 class="card-title">我的订单</h1>
       <div class="card-box">
-        <order-item :orders="orders"></order-item>
+        <!-- <order-item :orders="orders"></order-item> -->
       </div>
     </div>
 
@@ -20,7 +20,7 @@
 
 <script type="text/ecmascript-6">
 import TourCard from '../../../home/tour-card/tour-card.vue'
-import OrderItem from '../../common/order-item/order-item.vue'
+// import OrderItem from '../../common/order-item/order-item.vue'
 export default {
     name: 'Center',
   data() {
@@ -143,7 +143,7 @@ export default {
   },
   components: {
     TourCard,
-    OrderItem
+    // OrderItem
   }
 }
 </script>

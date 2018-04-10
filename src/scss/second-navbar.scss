@@ -1,6 +1,9 @@
 @import 'vars';
 .second-navbar {
     border-bottom: 1px solid $border-color-base;
+    .router-link-active {
+        color: $link-active-color;
+    }
 }
 .tour-logo {
     height: 100px;

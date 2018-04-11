@@ -52,6 +52,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+import ImageUpload from '../../../common/img-upload/img-upload.vue'
 export default {
   data() {
     return {
@@ -101,7 +102,7 @@ export default {
     }
 },
   components: {
-
+      ImageUpload
   }
 }
 </script>

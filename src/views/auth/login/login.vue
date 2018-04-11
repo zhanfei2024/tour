@@ -7,8 +7,8 @@
           <div class="form-wrapper">
             <h1 class="form-title text-center">{{formTitle}}</h1>
             <Form ref="formInline" :model="formInline" :rules="ruleInline">
-              <FormItem prop="user">
-                  <Input type="text" v-model="formInline.user" placeholder="Username">
+              <FormItem prop="phone">
+                  <Input type="text" v-model="formInline.phone" placeholder="Phone">
                       <Icon type="ios-person-outline" slot="prepend"></Icon>
                   </Input>
               </FormItem>
@@ -43,12 +43,12 @@ export default {
         formTitle: '',
         formRegisterUrl: '',
         formInline: {
-            user: '',
+            phone: '',
             password: ''
         },
         ruleInline: {
-            user: [
-                { required: true, message: 'Please fill in the user name', trigger: 'blur' }
+            phone: [
+                { required: true, message: 'Please fill in the user phone', trigger: 'blur' }
             ],
             password: [
                 { required: true, message: 'Please fill in the password.', trigger: 'blur' },
@@ -67,23 +67,33 @@ export default {
                 this.formTitle = '用户登录';
                 this.formRegisterUrl = '/user-register';
                 break;
-            case '/travel-login':
+            case '/enterprise-login':
                 this.formTitle = '企业登录';
                 this.formRegisterUrl = '/travel-register';
                 break;
         }
     },
     handleSubmit(name) {
-        const userId = 123;
         this.$refs[name].validate((valid) => {
             if (valid) {
-                this.$Message.success('Success!');
                 switch (this.$route.path) {
                     case '/user-login':
-                        this.$router.push({ path: `/user/${userId}/center` });
+                        console.log(this.$route.path, this.formInline.phone,'111')
+                        this.$router.push({ path: `/user/${this.formInline.phone}/center` });
+                        this.$store.commit('setAuth', {
+                            role: 'user',
+                            roleId: this.formInline.phone
+                        });
+                        this.$Message.success('Success!');
                         break;
-                    case '/travel-login':
-                        this.$router.push({ path: `/enterprise/${userId}/center` });
+                    case '/enterprise-login':
+                        console.log(this.$route.path, this.formInline.phone, `/enterprise/${this.formInline.phone}/center` ,'2222')
+                        this.$router.push({ path: `/enterprise/${this.formInline.phone}/center` });
+                        this.$store.commit('setAuth', {
+                            role: 'enterprise',
+                            roleId: this.formInline.phone
+                        });
+                        this.$Message.success('Success!');
                         break;
                 }
                 

@@ -15,12 +15,12 @@
                         <span class="second-title">好评最多</span>
                     </div>
                     <div class="travel-wrapper clearfix">
-                        <div v-for="item in travels" :key="item.id" class="clearfix col-xs-12 col-sm-2 col-md-3 travel-card">
+                        <router-link v-for="item in travels" :key="item.id" :to="'/travel/123/index'" class="clearfix col-xs-12 col-sm-2 col-md-3 travel-card">
                             <div class="travel-card-inner">
                                 <img class="travel-pic" src="http://via.placeholder.com/107x100">
                                 <p class="travel-name text-center">{{item.name}}</p>
                             </div>
-                        </div>
+                        </router-link>
                     </div>
                 </div>
             </div>

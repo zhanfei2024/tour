@@ -18,13 +18,13 @@
                 </section>
             </div>
             <div class="tour-status">
-                <span v-if="order.status === 'pending'">
+                <span v-show="order.status === 'pending'">
                     待商家确认
                 </span>
-                <span v-else-if="order.status === 'success'">
+                <span v-show="order.status === 'success'">
                     交易完成
                 </span>
-                <span v-else-if="order.status === 'cancle'">
+                <span v-show="order.status === 'cancle'">
                     已取消
                 </span>
             </div>

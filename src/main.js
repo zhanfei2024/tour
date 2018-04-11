@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import iView from'iview'
 import 'iview/dist/styles/iview.css'
 import './assets/css/full-layout.css'
@@ -18,6 +19,7 @@ Vue.use(VueEditorMarkdown)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'

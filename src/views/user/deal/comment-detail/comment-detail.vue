@@ -2,12 +2,11 @@
     <div class="user-center-page user-comment-list">
             <!-- 我的订单 -->
         <div class="custom-card">
-        <h1 class="card-title">评价订单</h1>
-        <div class="card-box">
-            <!-- <order-item :orders="orders"></order-item> -->
-        </div>
-        <div class="card-box">
-
+            <h1 class="card-title">评价订单</h1>
+            <div class="card-box">
+                <order-item :orders="orders"></order-item>
+            </div>
+            <div class="card-box">
                 <Rate show-text allow-half v-model="valueCustomText">
                     <span style="color: #f5a623">{{ valueCustomText }}</span>
                 </Rate>
@@ -17,8 +16,7 @@
                 <Rate show-text allow-half v-model="valueCustomText">
                     <span style="color: #f5a623">{{ valueCustomText }}</span>
                 </Rate>
-
-        </div>
+            </div>
         </div>
     </div>
 </template>

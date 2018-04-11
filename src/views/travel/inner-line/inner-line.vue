@@ -7,7 +7,15 @@
             <div class="card-box">
               <tour-card :arr-tours="innerTours"></tour-card>
             </div>
+
+            <!-- 分页 -->
+            <div class="page-wrapper">
+                <Page :total="100" :page-size="10"></Page>
+            </div>
+            
           </div>
+
+          
     </div>
   </div>
 

@@ -8,7 +8,7 @@
                 <span class="order-status-title" :class="{active: status === 'success'}" @click="status = 'success'">已完成</span>
                 <span class="order-status-title" :class="{active: status === 'cancle'}" @click="status = 'cancle'">已取消</span>
             </h1>
-            <!-- <div class="card-box" v-if="status === 'all'">
+            <div class="card-box" v-if="status === 'all'">
                 <order-item :orders="orders"></order-item>
             </div>
             <div class="card-box" v-else-if="status === 'pending'">
@@ -19,13 +19,13 @@
             </div>
             <div class="card-box" v-else>
                 <order-item :orders="orders | cancleFilter"></order-item>
-            </div> -->
+            </div>
         </div>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
-// import OrderItem from '../../common/order-item/order-item.vue'
+import OrderItem from '../../../common/order-item/order-item.vue'
 export default {
     data() {
       return {
@@ -97,7 +97,7 @@ export default {
         }
     },
     components: {
-        // OrderItem
+        OrderItem
     }
 }
 </script>

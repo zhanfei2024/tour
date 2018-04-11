@@ -27,15 +27,21 @@
     </div>
     <!-- 国内游 -->
     <div class="custom-card margin-bottom-20">
-      <h1 class="card-title">国内游</h1>
-      <div class="card-box">
-        <tour-card :arr-tours="innerTours"></tour-card>
-      </div>
+        <h1 class="card-title">
+            <span>国内游</span>
+            <span class="pull-right cursor"><router-link :to="'/travel/123/inner-line'">查看全部&nbsp;</router-link><Icon type="chevron-right"></Icon></span>
+        </h1>
+        <div class="card-box">
+            <tour-card :arr-tours="innerTours"></tour-card>
+        </div>
     </div>
 
     <!-- 境外游 -->
     <div class="custom-card margin-bottom-20">
-      <h1 class="card-title">境外游</h1>
+        <h1 class="card-title">
+            <span>境外游</span>
+            <span class="pull-right cursor"><router-link :to="'/travel/123/out-line'">查看全部&nbsp;</router-link><Icon type="chevron-right"></Icon></span>
+        </h1>
       <div class="card-box">
         <tour-card :arr-tours="innerTours"></tour-card>
       </div>

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 const route = require('./router')
+const auth = require('../../libs/util')
 
 Vue.use(Router)
 
@@ -14,13 +15,15 @@ const router = new Router({
   ]
 });
 
+
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     // this route requires auth, check if logged in
     // if not, redirect to login page.
-    if (!auth.loggedIn()) {
+    console.log(to)
+    if (!auth.loggedIn(to.meta.role)) {
       next({
-        path: '/login',
+        path: `/${to.meta.role}-login`,
         query: { redirect: to.fullPath }
       })
     } else {

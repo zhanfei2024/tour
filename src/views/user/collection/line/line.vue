@@ -12,7 +12,7 @@
 
 <script type="text/ecmascript-6">
 import TourCard from '../../../home/tour-card/tour-card.vue'
-// import OrderItem from '../../common/order-item/order-item.vue'
+import OrderItem from '../../../common/order-item/order-item.vue'
 export default {
     name: 'line',
   data() {

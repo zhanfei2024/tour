@@ -5,7 +5,7 @@
           <div class="custom-card margin-top-20 margin-bottom-20">
             <h1 class="card-title">境外游</h1>
             <div class="card-box">
-              <tour-card :arr-tours="innerTours"></tour-card>
+
             </div>
             <!-- 分页 -->
             <div class="page-wrapper">

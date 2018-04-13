@@ -78,21 +78,36 @@ export default {
             if (valid) {
                 switch (this.$route.path) {
                     case '/user-login':
-                        console.log(this.$route.path, this.formInline.phone,'111')
-                        this.$router.push({ path: `/user/${this.formInline.phone}/center` });
-                        this.$store.commit('setAuth', {
-                            role: 'user',
-                            roleId: this.formInline.phone
-                        });
+                        let user = {
+                            'role': 'user',
+                            'roleId': this.formInline.phone
+                        }
+                        for (const key in user) {
+                            if (user.hasOwnProperty(key)) {
+                                const element = user[key];
+                                window.localStorage.setItem(key, element)
+                                this.$store.commit('setAuth', user)
+                            }
+                        }
+                        console.log(this.$route.query.redirect);
+                        let userUrl = this.$route.query.redirect ? this.$route.query.redirect : `/user/${this.formInline.phone}/center`
+                        this.$router.push({ path: userUrl })
                         this.$Message.success('Success!');
                         break;
                     case '/enterprise-login':
-                        console.log(this.$route.path, this.formInline.phone, `/enterprise/${this.formInline.phone}/center` ,'2222')
-                        this.$router.push({ path: `/enterprise/${this.formInline.phone}/center` });
-                        this.$store.commit('setAuth', {
-                            role: 'enterprise',
-                            roleId: this.formInline.phone
-                        });
+                        let enterprise = {
+                            'role': 'enterprise',
+                            'roleId': this.formInline.phone
+                        }
+                        for (const key in enterprise) {
+                            if (enterprise.hasOwnProperty(key)) {
+                                const element = enterprise[key];
+                                window.localStorage.setItem(key, element)
+                                this.$store.commit('setAuth', enterprise)
+                            }
+                        }
+                        let enterpriseUrl = this.$route.query.redirect ? this.$route.query.redirect : `/enterprise/${this.formInline.phone}/center`
+                        this.$router.push({ path: enterpriseUrl });
                         this.$Message.success('Success!');
                         break;
                 }

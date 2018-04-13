@@ -106,6 +106,11 @@ const travel = {
                     component: () => import('../views/travel/line-detail/line-detail.vue')
                 },
                 {
+                    path: 'line-form/123',
+                    name: 'line-form',
+                    component: () => import('../views/travel/line-form/line-form.vue')
+                },
+                {
                     path: 'summary',
                     name: 'summary',
                     components: {

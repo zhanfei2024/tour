@@ -18,7 +18,7 @@ const actions = {
 //  mutations
 const mutations = {
     setAuth(state, payload) {
-        state.role = payload.role;
+        state.role = payload.role
         state.roleId = payload.roleId
     }
 }

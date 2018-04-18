@@ -4,7 +4,7 @@
             <div class="row">
                 <!-- 国内游 -->
                 <div class="custom-card margin-top-20 margin-bottom-20">
-                    <h1 class="card-title">提交订单</h1>
+                    <h1 class="card-title">提交订单{{$t('message.hello')}}</h1>
                     <div class="card-box">
 
                         <!-- 产品信息 -->

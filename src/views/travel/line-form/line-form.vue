@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <!-- 国内游 -->
-                <div class="custom-card margin-top-20 margin-bottom-20">
-                    <h1 class="card-title">提交订单</h1>
+                <div class="custom-card  margin-top-20 margin-bottom-20">
+                    <h1 class="card-title">提交订单{{$t('message.hello')}}</h1>
                     <div class="card-box">
 
                         <!-- 产品信息 -->
@@ -78,6 +78,12 @@
                             <Button type="ghost" @click="handleReset('')" style="margin-left: 8px">Reset</Button>
                         </FormItem> -->
                     </div>
+                </div>
+
+                <div class="custom-card margin-top-20 margin-bottom-20">
+                    <h1 class="card-title">订单信息</h1>
+                </div>
+
                 </div>
             </div>
         </div>

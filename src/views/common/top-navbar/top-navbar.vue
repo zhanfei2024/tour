@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="pull-left">
-                    <router-link class="welcome-info" :to="'/home/index'">欢迎您来到去哪儿旅游网站</router-link>
+                    <router-link class="welcome-info" :to="'/home/index'">{{$t('message.hello')}}欢迎您来到去哪儿旅游网站</router-link>
                 </div>
                 <!-- 未登录 -->
                 <div v-if="!authRole" class="pull-right ">
@@ -12,6 +12,17 @@
                     <router-link class="top-nav-link" :to="'/user-login'">请先登录</router-link>
                     <router-link class="top-nav-link" :to="'/user-register'">免费注册</router-link>
                     <router-link class="top-nav-link" :to="'/user/1/order'">我的订单</router-link>
+                    <!-- 语言切换 -->
+                    <Dropdown placement="bottom-start">
+                        <a href="javascript:void(0)">
+                            <Icon type="earth"></Icon>
+                        </a>
+                        <DropdownMenu slot="list">
+                            <DropdownItem><a class="top-nav-link" @click="setlanguage('CN')">简体中文</a></DropdownItem>
+                            <DropdownItem><a class="top-nav-link" @click="setlanguage('TW')">繁体中文</a></DropdownItem>
+                            <DropdownItem><a class="top-nav-link" @click="setlanguage('EN')">英语</a></DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
                 </div>
                 <!-- 用户登录成功 -->
                  <div v-else-if="authRole === 'user'" class="pull-right">
@@ -82,7 +93,7 @@ export default {
 
     },
     created() {
-
+        
     },
     computed: {
         authRole() {
@@ -93,6 +104,13 @@ export default {
         }
     },
     methods: {
+        setlanguage(state) {
+            this.$store.commit('setLang', {
+                type: state
+            });
+            this.$i18n.locale = this.$store.state.Lang.type
+            console.log(this.$store.state.Lang.type)
+        },
         logout() {
             let role = {}
             window.localStorage.removeItem('role')

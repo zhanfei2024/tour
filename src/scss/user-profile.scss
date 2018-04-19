@@ -1,4 +1,34 @@
-.profile-form {
-    width: 40%;
-    margin: 0 auto;
+@media (min-width: 996px) {
+    .profile-form {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 783px) and (max-width: 995px) {
+    .profile-form {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 782px) {
+    .profile-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .ivu-modal {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .ivu-modal {
+        width: 100%;
+    }
 }

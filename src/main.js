@@ -5,14 +5,17 @@ import App from './App'
 import router from './router'
 import store from './store'
 import iView from'iview'
+import VueI18n from 'vue-i18n'
 import 'iview/dist/styles/iview.css'
 import './assets/css/full-layout.css'
+import './assets/css/_iview-form.css'
 import VueEditorMarkdown from 'vue-editor-markdown'
 
 
 
 
 Vue.config.productionTip = false
+Vue.use(VueI18n)
 Vue.use(iView)
 Vue.use(VueEditorMarkdown)
 

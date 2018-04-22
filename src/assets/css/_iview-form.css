@@ -1,0 +1,18 @@
+/* 重置iview form表单控件 */
+label.ivu-form-item-label {
+    font-size: 14px;
+}
+.ivu-form-item-content{
+    line-height: 40px;
+}
+.ivu-form-item {
+    margin-bottom: 20px;
+}
+.ivu-form-item-label {
+    line-height: 20px;
+    margin-bottom: 0
+}
+input.ivu-input {
+    height: 40px;
+    border-radius: 0
+}

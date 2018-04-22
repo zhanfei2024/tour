@@ -1,12 +1,12 @@
 .home-travel {
-    background-color: $background-color-second;
+    background-color: $body-background ;
 }
 .address-filter {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding: 20px;
-    border: 1px solid $border-color-base;
+    border: 1px solid $four-color;
     background: $body-background;
     font-size: 14px;
 }
@@ -19,13 +19,13 @@
     line-height: 24px;
 }
 .location-item:hover  {
-    color: $link-hover-color;
+    color: $primary-color;
     cursor: pointer;
 }
 
 .travel-list {
     padding: 20px;
-    border: 1px solid $border-color-base;
+    border: 1px solid $four-color;
     background: $body-background;
     font-size: 14px;
 }
@@ -36,11 +36,11 @@
 .second-title {
     padding: 10px 20px;
     margin-right: 10px;
-    border: 1px solid $border-color-base;
+    border: 1px solid $four-color;
 }
 .second-title:hover {
-    background: $link-hover-color;
-    color: $tooltip-color;
+    background: $primary-color ;
+    color: $white-color;
     border: 1px solid transparent;
     cursor: pointer;
 }
@@ -59,7 +59,7 @@
 }
 .travel-card-inner {
     margin-bottom: 20px;
-    border: 1px solid $border-color-base;
+    border: 1px solid $four-color;
 }
 .travel-card-inner:hover {
     box-shadow: $shadow-base;

@@ -1,6 +1,6 @@
 .user-center-page {
     .custom-card {
-        border: 1px solid $border-color-light;
+        border: 1px solid $four-color;
         background-color: $body-background;
     }
     .card-title {
@@ -8,8 +8,8 @@
         font-size: 16px;
         font-weight: 410;
         line-height: 50px;
-        background-color: $background-color-second;
-        border-bottom: 1px solid $border-color-light;
+        background-color: $body-background;
+        border-bottom: 1px solid $four-color;
     }
     .card-box {
         padding: 20px;

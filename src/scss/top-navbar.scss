@@ -1,20 +1,20 @@
 @import 'vars';
 .top-navbar {
     line-height: 50px;
-    background-color: $background-dark;
+    background-color: $primary-light-color;
     a {
-        color: $primary-light-color;
+        color: $white-color;
     }
     .top-nav-link {
         padding: 0 10px;
-        border-right: 1px solid $border-color-base;
+        border-right: 1px solid $white-color;
     }
     .top-nav-link:last-child {
         border-right: none;
         padding-right: 0;
     }
     .top-nav-link:hover {
-        color: $tooltip-color 
+        color: $second-color;
     }
 
 }

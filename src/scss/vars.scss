@@ -1,23 +1,21 @@
-// Prefix
-$css-prefix             : ivu-;
-$css-prefix-iconfont    : ivu-icon;
-
 // Color
-$primary-color          : rgb(102, 102, 102);
-$primary-light-color    : rgb(204, 204, 204);
-$info-vacolor           : #2db7f5;
-$success-color          : #19be6b;
-$warning-color          : #ff9900;
-$error-color            : #ed3f14;
-$link-color             : #2D8cF0;
-$link-hover-color       : rgb(26, 188, 156);
-$link-active-color      : rgb(26, 188, 156);
-$price-color            : #F04844;
-$selected-color         : fade($primary-color, 90%);
-$tooltip-color          : #fff;
-$subsidiary-color       : #80848f;
-$rate-star-color        : #f5a623;
+$primary-color          : #0088a4;
+$primary-light-color    : #00afc7;
+$price-dark-color       : #0286a0;
+$second-color           : #3c3c3c;
+$three-color            : #555;
+$four-color             : #999;
+$white-color            : #fff;
+$point-color            : #f55;
+$button-danger-color    : #f24a15;
+$button-warn-color      : #f5a623;
+$button-default-color   : #4dd0e1;
 
+// Border color
+$border-color-base      : #00afc7;  // outside
+$border-color-second    : #eee;
+$border-color-hover     : rgb(0, 0, 255);  // inside
+$border-color-input     : #ccc;
 
 
 // Base
@@ -34,14 +32,11 @@ $border-radius-base     : 6px;
 $border-radius-small    : 4px;
 $cursor-disabled        : not-allowed;
 
-// Border color
-$border-color-base      : rgba(242, 242, 242, 1);  // outside
-$border-color-light     : rgb(228, 228, 228);
-$border-color-split     : #e9eaec;  // inside
+
 
 // Background color
 $background-color-base        : #f7f7f7;  // base
-$background-color-second      : rgba(245, 245, 245, 1);
+$background-color-second      : #e2f3f8;
 $background-dark              : rgb(51, 51, 51);
 $background-tag               : #F04844;
 // $background-color-select-hover: $input-disabled-bg;
@@ -96,23 +91,6 @@ $btn-circle-size        : 32px;
 $btn-circle-size-large  : 36px;
 $btn-circle-size-small  : 24px;
 
-// Layout and Grid
-$grid-columns                : 24;
-$grid-gutter-width           : 0;
-$layout-body-background      : #f5f7f9;
-$layout-header-background    : #495060;
-$layout-header-height        : 64px;
-$layout-header-padding       : 0 50px;
-$layout-footer-padding       : 24px 50px;
-$layout-footer-background    : $layout-body-background;
-$layout-sider-background     : $layout-header-background;
-$layout-trigger-height       : 48px;
-$layout-trigger-color        : #fff;
-$layout-zero-trigger-width   : 36px;
-$layout-zero-trigger-height  : 42px;
-
-// Legend
-$legend-color           : #999;
 
 // Input
 $input-height-base           : 32px;

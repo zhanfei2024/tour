@@ -1,8 +1,8 @@
 @import 'vars';
 .second-navbar {
-    border-bottom: 1px solid $border-color-base;
+    border-bottom: 2px solid $price-dark-color;
     .router-link-active {
-        color: $link-active-color;
+        color: $second-color;
     }
 }
 .tour-logo {
@@ -27,11 +27,11 @@
     font-size: 16px;
     font-weight: 700;
     a {
-        color: $primary-color;
+        color: $second-color;
         margin: 0 20px;   
     }
     a:hover {
-        color: $link-hover-color;   
+        color: $primary-color ;   
     }
 }
 

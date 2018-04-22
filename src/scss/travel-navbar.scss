@@ -2,8 +2,8 @@
     .travel-navbar {
         position: relative;
         padding: 0 40px;
-        background-color: $background-color-base;
-        border-bottom: 4px solid $link-active-color;
+        background-color: #0088a4;;
+        border-bottom: 4px solid $price-dark-color;
     }
     .navbar-info {
         padding: 20px 0;
@@ -27,8 +27,8 @@
             line-height: 20px;
             height: 20px;
             padding: 0 10px;
-            color: $tooltip-color ;
-            background-color: $warning-color;
+            color: $white-color ;
+            background-color: $button-danger-color;
             border-radius: 10px;
         }
         span:first-child {
@@ -49,8 +49,8 @@
     }
     .tab-item:hover, .tab-item.router-link-active {
         cursor: pointer;
-        color: $tooltip-color;
-        background-color: $link-active-color;
+        color: $white-color;
+        background-color: $primary-color  ;
     }
     .travel-comment {
         position: absolute;
@@ -62,13 +62,13 @@
         border-radius: 20px;
         text-align: center;
         background-color: $primary-color;
-        color: $tooltip-color;
+        color: $white-color;
         i {
             margin-right: 10px;
         }
     }
     .travel-comment.active {
-        color: $error-color;
+        color: $point-color;
         i {
             margin-right: 10px;
         }

@@ -1,10 +1,10 @@
 .out-tour {
-    background-color: $background-color-base;
+    background-color: $body-background;
 }
 .hot-recommend, .out-follow-tour, .out-help-tour {
     padding: 20px;
     background-color: $body-background;
-    border: 1px solid $border-color-base;
+    border: 1px solid $four-color;
 }
 .hot-title, .help-title, .follow-title {
     font: 650 20px $font-family ;

@@ -10,13 +10,13 @@
     }
     .carouse-item {
         padding-bottom: 20px;
-        border-bottom: 1px solid $border-color-base;
+        border-bottom: 1px solid $four-color;
     }
     .carouse-edit {
         margin-right: 10px;
     }
     .carouse-edit:hover, .carouse-delete:hover {
-        color: $link-hover-color;
+        color: $border-color-hover;
         cursor: pointer;
     }
 }

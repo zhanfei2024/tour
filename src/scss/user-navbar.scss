@@ -1,12 +1,12 @@
 .user-navbar-page {
 
-    background-color: $background-color-base;
+    background-color: $body-background ;
 }
 .user-navbar-wrapper {
     margin: 0 -15px;
 }
 .nav-list {
-    border: 1px solid $border-color-light;
+    border: 1px solid $four-color;
     background: $body-background;
     color: $primary-color;
     .big-title {
@@ -25,12 +25,12 @@
         border-left: 3px solid transparent;
     }
     .active {
-        border-color: $link-active-color;
-        color: $link-active-color;
+        border-color: $primary-color;
+        color: $white-color;
     }
     li:hover {
         cursor: pointer;
-        color: $link-hover-color;
+        color:$white-color;
     }
 
 }

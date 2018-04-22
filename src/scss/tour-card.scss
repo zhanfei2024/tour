@@ -5,7 +5,7 @@
         display: block;
         position: relative;
         margin: 10px 0;
-        border: 1px solid $border-color-base;
+        border: 1px solid $four-color;
     }
     .tour-card-inner:hover {
         box-shadow: $shadow-card  
@@ -21,7 +21,7 @@
     .tour-summary, {
         font: 14px $font-family;
         color: $primary-color;
-        border-bottom: 1px solid $border-color-base;
+        border-bottom: 1px solid $four-color;
     }
     .tour-summary, .tour-info {
         padding: 20px;
@@ -29,10 +29,10 @@
     }
     .tour-price {
         font: 400 20px $font-family;
-        color: $price-color
+        color: $point-color;
     }
     .tour-comment {
-        border-top: 1px solid $border-color-base; 
+        border-top: 1px solid $four-color; 
         text-align: center;
     }
     .comment-btn {
@@ -43,7 +43,7 @@
         font: 400 $font-family;
         padding: 0 6px;
         line-height: 18px;
-        background: $warning-color;
-        color: $tooltip-color;
+        background: $button-danger-color;
+        color: $white-color;
     }
 }

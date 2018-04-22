@@ -1,6 +1,6 @@
 // custom-title
 .ivu-carousel-item {
-    background-color: $background-color-second;
+    background-color: $primary-color;
 }
 .title, .big-title {
     line-height: 50px;
@@ -15,19 +15,7 @@
         text-align: center;
     }
 }
-.big-title {
-    font-size: 18px;
-}
-.reload-more{
-    a, i {
-        font-size: 14px;
-        color: $primary-color;      
-    }
-    i {
-        padding-left: 10px;
-    }
 
-}
 
 
 

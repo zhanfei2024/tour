@@ -1,5 +1,5 @@
 <template>
-    <div class="row title">
+    <div class="row page-title">
         <h1 class="big-title col-xs-2 col-sm-2 col-md-2">{{title}}</h1>
         <p v-if="reloadMore.show" class="reload-more col-xs-2 col-sm-2 col-md-2 pull-right">
             <router-link class="pull-right" :to="reloadMore.url">查看全部<Icon type="chevron-right"></Icon></router-link>

@@ -15,8 +15,8 @@
     align-items: center;
 }
 .form-wrapper {
-    background-color: $tooltip-color;
-    border: 1px solid $border-color-base;
+    background-color: $white-color;
+    border: 1px solid $four-color;
     margin: 0 -15px;
     padding: 40px;
 }
@@ -28,19 +28,19 @@
     width: 100%;
     font-size: 14px;
     height: 40px;
-    background-color: $body-background;
-    color: $link-hover-color;
-    border: 1px solid $link-hover-color;
+    background-color: $button-default-color;
+    color: $white-color;
+    border: 1px solid $button-default-color;
 
 }
 .submit-login:hover {
-    background-color: $link-hover-color;
-    color: $tooltip-color;
-    border: 1px solid $link-hover-color;
+    background-color: $price-dark-color ;
+    color: $white-color;
+    border: 1px solid $price-dark-color ;
 }
 .form-add {
     a {
         font-size: 14px;
-        color: $link-hover-color;
+        color:  $white-color;
     }
 }

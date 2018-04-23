@@ -3,7 +3,9 @@ $css-prefix             : ivu-;
 $css-prefix-iconfont    : ivu-icon;
 
 // Color
-$primary-color          : rgb(102, 102, 102);
+$primary-color          : #00afc7;
+$primary-color          : #0286a0;
+$primary-color          : #e2f3f8;
 $primary-light-color    : rgb(204, 204, 204);
 $info-vacolor           : #2db7f5;
 $success-color          : #19be6b;
@@ -41,7 +43,7 @@ $border-color-split     : #e9eaec;  // inside
 
 // Background color
 $background-color-base        : #f7f7f7;  // base
-$background-color-second      : rgba(245, 245, 245, 1);
+$background-color-second      : #3bb0d0;
 $background-dark              : rgb(51, 51, 51);
 $background-tag               : #F04844;
 // $background-color-select-hover: $input-disabled-bg;

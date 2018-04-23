@@ -13,12 +13,12 @@
                   </Input>
               </FormItem>
               <FormItem prop="password">
-                  <Input type="password" v-model="formInline.password" placeholder="Password">
+                  <Input type="password" v-model="formInline.password" placeholder="Password" v-on:keyup.enter="test">
                       <Icon type="ios-locked-outline" slot="prepend"></Icon>
                   </Input>
               </FormItem>
               <FormItem>
-                  <Button class="submit-login" type="primary" @click="handleSubmit('formInline')">Signin</Button>
+                  <Button  class="submit-login" type="primary" v-on:keyup.enter="test" @click="handleSubmit('formInline')" >Signin</Button>
               </FormItem>
             </Form>
             <ul class="form-add">
@@ -57,10 +57,37 @@ export default {
       }
     }
   },
+  mounted() {
+    //   this.addEventListener()
+  },
   created() {
-      this.formInit(this.$route.path)
+    //   console.log(this.$refs.submit)
+    //   this.formInit(this.$route.path)
+    console.log(this.object()(1));
+    console.log(Object.prototype)
   },
   methods: {
+    object() {
+        return Object.print = function(o) {
+            console.log(o)
+        }
+    },
+    push(array, ...items) {
+        array.push(...items);
+        console.log(array, 'array')
+    },
+    arrAdd() {
+        let arr1 = [0, 1, 2];
+        let arr2 = [3, 4, 5];
+        // arr1.push(...arr2);
+        console.log(arr1)
+    },
+    test() {
+        console.log('ok')
+    },
+    // addEventListener() {
+    //     this.$refs.submit.addEventListener('click', this.test, false)
+    // },
     formInit(status) {
         switch (status) {
             case '/user-login':
@@ -74,6 +101,7 @@ export default {
         }
     },
     handleSubmit(name) {
+        console.log('ok')
         this.$refs[name].validate((valid) => {
             if (valid) {
                 switch (this.$route.path) {

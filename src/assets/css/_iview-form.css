@@ -8,11 +8,25 @@ label.ivu-form-item-label {
 .ivu-form-item {
     margin-bottom: 20px;
 }
-.ivu-form-item-label {
+label.ivu-form-item-label {
     line-height: 20px;
     margin-bottom: 0
+}
+.ivu-date-picker {
+    width: 100%;
+}
+.ivu-col {
+    width: 100%;
 }
 input.ivu-input {
     height: 40px;
     border-radius: 0
+}
+
+.ivu-btn-primary {
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
 }

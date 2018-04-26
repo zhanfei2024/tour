@@ -12,7 +12,7 @@ const index = {
         },
         {
             path: 'travel',
-            name: 'travel',
+            name: 'index-travel',
             component: () => import('../views/home/travel/travel.vue')
         },
         {
@@ -81,7 +81,7 @@ const travel = {
             children: [
                 {
                     path: 'index',
-                    name: 'index',
+                    name: 'travel-index',
                     component: () => import('../views/travel/index/index.vue')
                 },
                 {
@@ -136,7 +136,7 @@ const travel = {
 const user = {
     path: '',
     redirect: '/index',
-    name: 'full-layout',
+    name: 'user-full-layout',
     component: () => import('../views/common/full-layout/full-layout.vue'),
     children: [
         {
@@ -146,7 +146,7 @@ const user = {
             children: [
                 {
                     path: 'center',
-                    name: 'center',
+                    name: 'user-center',
                     component: () => import('../views/user/account/center/center.vue'),
                     meta: { requiresAuth: true, role: 'user' }
                 },
@@ -157,7 +157,7 @@ const user = {
                     meta: { requiresAuth: true, role: 'user' }
                 },
                 {
-                    path: 'safe',
+                    path: 'user-safe',
                     name: 'safe',
                     component: () => import('../views/user/account/safe-list/safe-list.vue'),
                     meta: { requiresAuth: true, role: 'user' }
@@ -169,14 +169,14 @@ const user = {
                     meta: { requiresAuth: true, role: 'user' }
                 },
                 {
-                    path: 'order',
+                    path: 'user-order',
                     name: 'order',
                     component: () => import('../views/user/deal/order/order.vue'),
                     meta: { requiresAuth: true, role: 'user' }
                 },
                 {
-                    path: 'order-detail/:id',
-                    name: 'order-detail',
+                    path: 'order-detail/:orderId',
+                    name: 'user-order-detail',
                     component: () => import('../views/user/deal/order-detail/order-detail.vue'),
                     meta: { requiresAuth: true, role: 'user' }
                 },
@@ -213,7 +213,7 @@ const user = {
 const enterprise = {
     path: '',
     redirect: '/index',
-    name: 'full-layout',
+    name: 'enterprise-full-layout',
     component: () => import('../views/common/full-layout/full-layout.vue'),
     children: [
         {
@@ -223,7 +223,7 @@ const enterprise = {
             children: [
                 {
                     path: 'center',
-                    name: 'center',
+                    name: 'enterprise-center',
                     component: () => import('../views/travel-mange/account/center/center.vue'),
                     meta: { requiresAuth: true, role: 'enterprise'}
                 },
@@ -235,7 +235,7 @@ const enterprise = {
                 },
                 {
                     path: 'safe',
-                    name: 'safe',
+                    name: 'enterprise-safe',
                     component: () => import('../views/travel-mange/account/safe/safe.vue'),
                     meta: { requiresAuth: true, role: 'enterprise' }
                 },
@@ -247,13 +247,13 @@ const enterprise = {
                 },
                 {
                     path: 'order',
-                    name: 'order',
+                    name: 'enterprise-order',
                     component: () => import('../views/travel-mange/deal/order/order.vue'),
                     meta: { requiresAuth: true, role: 'enterprise' }
                 },
                 {
                     path: 'order-detail/123',
-                    name: 'order-detail',
+                    name: 'enterprise-order-detail',
                     component: () => import('../views/travel-mange/deal/order-detail/order-detail.vue'),
                     meta: { requiresAuth: true, role: 'enterprise' }
                 },

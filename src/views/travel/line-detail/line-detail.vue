@@ -255,4 +255,5 @@ export default {
 </script>
 
 <style lang="scss">
+    @import './line-detail.scss';
 </style>

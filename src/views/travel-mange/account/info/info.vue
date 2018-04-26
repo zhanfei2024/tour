@@ -4,7 +4,7 @@
     <div class="custom-card">
         <h1 class="card-title">基本信息</h1>
         <div class="card-box">
-            <Form class="profile-form" ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="100">
+            <Form class="profile-form clearfix" ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="100" inline>
                 <FormItem label="旅行社名称" prop="travelName">
                     <Input :disabled="true" v-model="formValidate.travelName" placeholder="travel name"></Input>
                 </FormItem>
@@ -30,7 +30,7 @@
                 <FormItem label="旅行社门脸" prop="front">
                     <image-upload></image-upload>
                 </FormItem>
-                <FormItem label="旅行社简介" prop="sumamry">
+                <FormItem class="editor-markdown" label="旅行社简介" prop="sumamry">
                     <vue-editor-markdown :isPreview="true" :v-model="formValidate.sumamry"></vue-editor-markdown>
                 </FormItem>
                 <FormItem>
@@ -108,5 +108,4 @@ export default {
 </script>
 
 <style lang="scss">
-
 </style>

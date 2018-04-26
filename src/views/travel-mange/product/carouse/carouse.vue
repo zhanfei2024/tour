@@ -102,4 +102,5 @@ export default {
 </script>
 
 <style lang="scss">
+@import './manage-carouse.scss';
 </style>

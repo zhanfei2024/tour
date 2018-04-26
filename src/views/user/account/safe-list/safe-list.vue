@@ -105,4 +105,5 @@ export default {
 </script>
 
 <style lang="scss">
+@import './user-safe-list.scss';
 </style>

@@ -249,6 +249,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import './out-tour.scss';
 </style>
 

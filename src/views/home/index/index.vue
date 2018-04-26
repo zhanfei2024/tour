@@ -61,7 +61,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-import customTitle from '../title/title.vue'
+import customTitle from '../../common/title/title.vue'
 import tourCard from '../tour-card/tour-card.vue'
 export default {
     name: 'index',
@@ -582,6 +582,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import './home.scss';
 </style>
 

@@ -124,6 +124,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import './top-navbar.scss';
 </style>
 

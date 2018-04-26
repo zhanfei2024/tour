@@ -138,4 +138,5 @@ export default {
 </script>
 
 <style lang="scss">
+@import './phone-set.scss';
 </style>

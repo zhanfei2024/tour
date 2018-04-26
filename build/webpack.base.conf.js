@@ -77,20 +77,19 @@ module.exports = {
       /* scss文件转换为css */
       {
         test: /\.scss$/,
-        loaders: ['style', "css", "sass"]
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: ['../src/scss/vars.scss', '../src/scss/mixins.scss']
+            }
+          }
+        ]
       }
     ]
-  },
-  node: {
-    // prevent webpack from injecting useless setImmediate polyfill because Vue
-    // source contains it (although only uses it if it's native).
-    setImmediate: false,
-    // prevent webpack from injecting mocks to Node native modules
-    // that does not make sense for the client
-    dgram: 'empty',
-    fs: 'empty',
-    net: 'empty',
-    tls: 'empty',
-    child_process: 'empty'
   }
 }

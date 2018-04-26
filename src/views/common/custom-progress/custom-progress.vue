@@ -19,17 +19,23 @@
 export default {
   data() {
     return {
-
+        test: ''
     }
   },
   props: {
-      progress: Object
+      progress: {
+          currentNum: Number,
+          step1: String,
+          step2: String,
+          step3: String
+      }
   },
   components: {
 
   }
 }
 </script>
-
 <style lang="scss">
+    @import './custom-progress.scss';
 </style>
+

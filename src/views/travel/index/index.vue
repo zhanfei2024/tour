@@ -27,10 +27,9 @@
     </div>
     <!-- 国内游 -->
     <div class="custom-card margin-bottom-20">
-        <h1 class="card-title">
-            <span>国内游</span>
-            <span class="pull-right cursor"><router-link :to="'/travel/123/inner-line'">查看全部&nbsp;</router-link><Icon type="chevron-right"></Icon></span>
-        </h1>
+        <custom-title class="margin-0 margin-bottom-20" v-bind:title="innerTitle.title" 
+                      v-bind:arrFilter="innerTitle.arrFilter"
+              v-bind:reload-more="innerTitle.reloadMore"></custom-title>
         <div class="card-box">
             <tour-card :arr-tours="innerTours"></tour-card>
         </div>
@@ -38,10 +37,9 @@
 
     <!-- 境外游 -->
     <div class="custom-card margin-bottom-20">
-        <h1 class="card-title">
-            <span>境外游</span>
-            <span class="pull-right cursor"><router-link :to="'/travel/123/out-line'">查看全部&nbsp;</router-link><Icon type="chevron-right"></Icon></span>
-        </h1>
+        <custom-title class="margin-0 margin-bottom-20" v-bind:title="outTitle.title" 
+                v-bind:arrFilter="outTitle.arrFilter"
+        v-bind:reload-more="outTitle.reloadMore"></custom-title>
       <div class="card-box">
         <tour-card :arr-tours="innerTours"></tour-card>
       </div>
@@ -51,10 +49,27 @@
 
 <script type="text/ecmascript-6">
 import TourCard from '../../home/tour-card/tour-card.vue'
+import CustomTitle from '../../common/title/title.vue'
 export default {
     name: 'travel-index',
   data() {
     return {
+        innerTitle: {
+            title: '国内游',
+            arrFilter: [ ],
+            reloadMore: {
+                    show: true,
+                    url: '/travel/123/inner-line'
+            }
+        },
+        outTitle: {
+            title: '境外游',
+            arrFilter: [ ],
+            reloadMore: {
+                    show: true,
+                    url: '/travel/123/out-line'
+            }
+        },
       value3: 0,
       setting: {
           autoplay: false,
@@ -167,10 +182,12 @@ export default {
   }
   },
   components: {
-    TourCard
+    TourCard,
+    CustomTitle
   }
 }
 </script>
 
 <style lang="scss">
+@import './travel-content-layout.scss';
 </style>

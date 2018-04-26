@@ -46,6 +46,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import './travel-navbar.scss';
 </style>
 

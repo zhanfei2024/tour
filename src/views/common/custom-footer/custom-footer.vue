@@ -70,6 +70,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+    @import './custom-footer.scss';
 </style>
 

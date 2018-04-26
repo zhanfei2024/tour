@@ -4,10 +4,10 @@
     <div class="custom-card">
         <h1 class="card-title">线路管理</h1>
         <div class="card-box">
-            <div v-show="progress.currentNum === 1  || progress.currentNum === 2" class="form-list">
-                <custom-progress :progress="progress"></custom-progress>
+            <div v-show="customProgress.currentNum === 1  || customProgress.currentNum === 2" class="form-list">
+                <custom-progress :progress="customProgress"></custom-progress>
                 <Form class="profile-form" ref="formItem" :model="formItem" :rules="ruleValidate" :label-width="100">
-                    <div v-show="progress.currentNum === 1">
+                    <div v-show="customProgress.currentNum === 1">
                         <FormItem label="线路标题" prop="lineName">
                             <Input v-model="formItem.lineName" placeholder="Enter title, up to 35 words"></Input>
                         </FormItem>
@@ -73,7 +73,7 @@
                             </Row>
                         </FormItem>
                     </div>
-                    <div v-show="progress.currentNum === 2">
+                    <div v-show="customProgress.currentNum === 2">
                         <FormItem label="线路特色" prop="feature">
                             <vue-editor-markdown :v-model="formItem.feature"></vue-editor-markdown>
                         </FormItem>
@@ -93,7 +93,7 @@
                             <vue-editor-markdown :v-model="formItem.notice"></vue-editor-markdown>
                         </FormItem>
                     </div>
-                    <div v-show="progress.currentNum === 3"></div>
+                    <div v-show="customProgress.currentNum === 3"></div>
                         
                     <FormItem>
                         <Button type="primary" @click="handleStep()">下一步</Button>
@@ -101,7 +101,7 @@
                     </FormItem>
                 </Form>
             </div>
-            <div v-show="progress.currentNum === 3" class="success">
+            <div v-show="customProgress.currentNum === 3" class="success">
                <div class="success-logo">
                    <Icon type="checkmark-circled"></Icon>
                </div>
@@ -123,7 +123,7 @@ import CustomImgUpload from '../../../common/custom-img-upload/custom-img-upload
 export default {
   data() {
     return {
-        progress: {
+        customProgress: {
             currentNum: 1,
             step1: '基本信息',
             step2: '详细描述',

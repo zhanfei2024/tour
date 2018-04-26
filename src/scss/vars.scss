@@ -55,7 +55,8 @@ $menu-dark-group-title-color  : rgba(255,255,255,.36);
 $date-picker-cell-hover-bg    : #e1f0fe;
 
 // Shadow
-$shadow-color           : rgba(0, 0, 0, .2);
+$shadow-color           : rgba(0, 0, 0, .3);
+$mask-color             : rgba(0, 0, 0, .5);
 $shadow-down            : 0 1px 6px $shadow-color;
 $shadow-base            : $shadow-down;
 $shadow-card            : 0 1px 1px 0 rgba(0,0,0,.1);

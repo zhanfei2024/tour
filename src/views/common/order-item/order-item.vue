@@ -55,6 +55,7 @@ export default {
 </script>
 
 <style lang="scss">
+    @import './order-item.scss';
 </style>
 
 

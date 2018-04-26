@@ -1,0 +1,22 @@
+.page-title {
+    border-bottom: 2px solid $primary-light-color;
+    margin-bottom: 20px;
+    .big-title {
+        font-size: 18px;
+        color: $primary-light-color;
+    }
+    .second-list {
+        line-height: 50px;
+    }
+    .reload-more{
+        line-height: 50px;
+        a, i {
+            font-size: 14px;
+            color: $four-color;      
+        }
+        i {
+            padding-left: 10px;
+        }
+
+    }
+}

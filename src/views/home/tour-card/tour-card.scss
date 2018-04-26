@@ -8,8 +8,44 @@
         border: 1px solid $border-color-input;
     }
     .tour-card-inner:hover {
-        box-shadow: $shadow-card;
-        border-color: $border-color-hover;  
+        box-shadow: 0 4px 4px 1px $shadow-color;
+        overflow: hidden;
+
+        // border-color: $border-color-hover;  
+        .tour-pic-mask {
+            background-color: $mask-color;
+            transform: scale(1.1);
+        }
+        .tour-pic-text {
+            display: block;
+        }
+    }
+    .tour-pic-wrapper {
+        overflow: hidden;
+    }
+    .tour-pic-mask {
+        transition: background-color .5s ease-in;
+        transition: transform .5s ease-in;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: calc(100% - 88px);
+        color: $white-color;
+    }
+    .tour-pic-text {
+        display: none;
+        padding: 0 20px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        display:-webkit-box;
+        -webkit-line-clamp:2;
+        -webkit-box-orient:vertical;
     }
     .tour-tag {
         position: absolute;

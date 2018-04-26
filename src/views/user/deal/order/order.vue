@@ -103,5 +103,5 @@ export default {
 </script>
 
 <style lang="scss">
-
+    @import './user-order.scss';
 </style>

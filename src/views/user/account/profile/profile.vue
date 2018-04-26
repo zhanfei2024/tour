@@ -100,5 +100,5 @@ export default {
 </script>
 
 <style lang="scss">
-
+    @import './user-profile.scss';
 </style>

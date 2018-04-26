@@ -125,7 +125,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+    @import 'user-login.scss';
 </style>
 
 

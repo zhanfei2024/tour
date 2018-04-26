@@ -55,6 +55,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+    @import './second-navbar.scss';
 </style>
 

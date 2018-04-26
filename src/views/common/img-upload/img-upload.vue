@@ -17,7 +17,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-import myUpload from 'vue-image-crop-upload';
+import myUpload from "vue-image-crop-upload";
 export default {
     data() {
         return {

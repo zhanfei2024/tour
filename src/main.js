@@ -8,7 +8,7 @@ import iView from'iview'
 import VueI18n from 'vue-i18n'
 import 'iview/dist/styles/iview.css'
 import './assets/css/full-layout.css'
-import './assets/css/_iview-form.css'
+
 import VueEditorMarkdown from 'vue-editor-markdown'
 import {cn}  from './local/cn'
 import {en} from './local/en'

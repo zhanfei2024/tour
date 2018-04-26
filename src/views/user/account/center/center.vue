@@ -149,4 +149,5 @@ export default {
 </script>
 
 <style lang="scss">
+@import './user-center.scss';
 </style>

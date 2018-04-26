@@ -42,4 +42,5 @@ export default {
 </script>
 
 <style lang="scss">
+    @import './user-navbar.scss';
 </style>

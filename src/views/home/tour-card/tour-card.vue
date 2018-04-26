@@ -4,7 +4,10 @@
             :key="item.id" :class="item.class" 
             :to="item.url">
             <div class="tour-card-inner">
-                <img class="tour-pic" :src="item.imgSrc">
+                <div class="tour-pic-wrapper">
+                    <img class="tour-pic" :src="item.imgSrc">
+                    <div class="tour-pic-mask"><p class="tour-pic-text">好玩的嗨起来好玩的嗨起来好的嗨起来好玩的嗨起来的玩的嗨起来好玩的嗨起来好玩的嗨起来好玩的嗨起来</p></div>
+                </div>
                 <p class="tour-summary">
                     <span>{{item.time}}</span><span>{{item.dis}}</span>
                 </p>
@@ -43,6 +46,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+    @import './tour-card.scss';
 </style>
 

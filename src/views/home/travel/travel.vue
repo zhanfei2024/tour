@@ -87,6 +87,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+    @import './travel.scss';
 </style>
 

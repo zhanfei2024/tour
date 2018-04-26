@@ -32,28 +32,28 @@
             <custom-title v-bind:title="choiceTitle.title" 
                     v-bind:arr-filter="choiceTitle.arrFilter" 
                     v-bind:reload-more="choiceTitle.reloadMore"></custom-title>
-            <div class="row clearfix">
+            <div class="row clearfix margin-bottom-40">
                 <tour-card :arr-tours="choiceTours"></tour-card>
             </div>
             <!-- 旅行社 -->
             <custom-title v-bind:title="travelTitle.title" 
                     v-bind:arr-filter="travelTitle.arrFilter" 
                     v-bind:reload-more="travelTitle.reloadMore"></custom-title>
-            <div class="row clearfix">
+            <div class="row clearfix margin-bottom-40">
                 <tour-card :arr-tours="travels"></tour-card>
             </div>
             <!-- 国内游 -->
             <custom-title v-bind:title="innerTitle.title" 
                     v-bind:arr-filter="innerTitle.arrFilter" 
                     v-bind:reload-more="innerTitle.reloadMore"></custom-title>
-            <div class="row clearfix">
+            <div class="row clearfix margin-bottom-40">
                 <tour-card :arr-tours="innerTours"></tour-card>
             </div>
             <!-- 境外游 -->
             <custom-title v-bind:title="outTitle.title" 
                     v-bind:arr-filter="outTitle.arrFilter" 
                     v-bind:reload-more="outTitle.reloadMore"></custom-title>
-            <div class="row clearfix">
+            <div class="row clearfix margin-bottom-40">
                 <tour-card :arr-tours="outTours"></tour-card>
             </div>
         </div>
@@ -574,6 +574,9 @@ export default {
     components: {
         customTitle,
         tourCard
+    },
+    methods() {
+        console.log('111')
     }
 }
 </script>

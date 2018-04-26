@@ -6,7 +6,7 @@ label.ivu-form-item-label {
     line-height: 40px;
 }
 .ivu-form-item {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 .ivu-form-item-label {
     line-height: 20px;
@@ -16,3 +16,6 @@ input.ivu-input {
     height: 40px;
     border-radius: 0
 }
+
+
+

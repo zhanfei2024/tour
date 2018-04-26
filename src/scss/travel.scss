@@ -6,8 +6,6 @@
     flex-direction: row;
     justify-content: flex-start;
     padding: 20px;
-    border: 1px solid $four-color;
-    background: $body-background;
     font-size: 14px;
 }
 .location-title {
@@ -25,7 +23,6 @@
 
 .travel-list {
     padding: 20px;
-    border: 1px solid $four-color;
     background: $body-background;
     font-size: 14px;
 }
@@ -59,7 +56,7 @@
 }
 .travel-card-inner {
     margin-bottom: 20px;
-    border: 1px solid $four-color;
+    border: 1px solid $border-color-input;
 }
 .travel-card-inner:hover {
     box-shadow: $shadow-base;

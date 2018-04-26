@@ -4,17 +4,19 @@
 .hot-recommend, .out-follow-tour, .out-help-tour {
     padding: 20px;
     background-color: $body-background;
-    border: 1px solid $four-color;
 }
 .hot-title, .help-title, .follow-title {
+    margin-bottom: 20px;
     font: 650 20px $font-family ;
-    line-height: 40px;
+    color: $primary-color;
+    line-height: 50px;
+    border-bottom: 2px solid $price-dark-color;
 }
 
 .conutry-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .country-logo {
     border-radius: 8px;

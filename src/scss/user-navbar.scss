@@ -1,19 +1,18 @@
 .user-navbar-page {
-
     background-color: $body-background ;
 }
 .user-navbar-wrapper {
     margin: 0 -15px;
 }
 .nav-list {
-    border: 1px solid $four-color;
+    border: 1px solid $border-color-light;
     background: $body-background;
-    color: $primary-color;
+    color: $second-color;
     .big-title {
         a {
             font-size: 18px;
             font-weight: 700;
-            color: $primary-color;
+            color: $second-color;
         }
     }
     li {
@@ -25,12 +24,12 @@
         border-left: 3px solid transparent;
     }
     .active {
-        border-color: $primary-color;
-        color: $white-color;
+        border-color: $price-dark-color;
+        color: $primary-color;
     }
     li:hover {
         cursor: pointer;
-        color:$white-color;
+        color: $primary-color;
     }
 
 }

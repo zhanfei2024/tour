@@ -1,13 +1,39 @@
-.signup {
+.signup-page {
     background-color: $body-background;
-}
-.signup-wrapper {
-    padding: 40px;
-    border: 1px solid $border-color-base;
-    background-color: $body-background;
+    .signup-wrapper {
+        padding: 40px;
+        background-color: $body-background;
+    }
+    .signup-form {
+        margin: 0 auto;
+    }
+    .signup-title {
+        text-align: center;
+        font: 700 16px $font-family;
+        color: $second-color; 
+    }
 
-}
-.signup-form {
-    width: 50%;
-    margin: 0 auto;
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+        .signup-form {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+        .signup-form {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+        .signup-form {
+            width: 30%;
+        }
+    }
+    @media (min-width: $screen-lg-min) {
+        .signup-form {
+            width: 30%;
+        }
+    }
 }

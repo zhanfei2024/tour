@@ -5,10 +5,11 @@
         display: block;
         position: relative;
         margin: 10px 0;
-        border: 1px solid $four-color;
+        border: 1px solid $border-color-input;
     }
     .tour-card-inner:hover {
-        box-shadow: $shadow-card  
+        box-shadow: $shadow-card;
+        border-color: $border-color-hover;  
     }
     .tour-tag {
         position: absolute;
@@ -20,12 +21,11 @@
     }
     .tour-summary, {
         font: 14px $font-family;
-        color: $primary-color;
-        border-bottom: 1px solid $four-color;
+        color: $second-color;
     }
     .tour-summary, .tour-info {
-        padding: 20px;
-        color: $primary-color;
+        padding: 10px 20px;
+        color: $second-color;
     }
     .tour-price {
         font: 400 20px $font-family;

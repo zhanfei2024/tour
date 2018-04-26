@@ -1,5 +1,5 @@
 <template>
-    <div class="custom-footer" :style="{backgroundColor: backgroundColor}">
+    <div class="custom-footer">
         <div class="container">
             <div v-if="footerListShow" class="row footer-list">
                 <div class="col-xs-12 col-sm-4 col-md-4">

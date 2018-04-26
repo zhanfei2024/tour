@@ -6,30 +6,22 @@
                     <h1 class="hot-title text-center">热门推荐</h1>
                     <div class="conutry-list">
                         <div class="country-item">
-                            <img class="country-logo" src="http://via.placeholder.com/52x48">
+                            <img class="country-logo" src="http://via.placeholder.com/208x192">
                             <p class="country-name">美国</p>
                         </div>
                         <div class="country-item">
-                            <img class="country-logo" src="http://via.placeholder.com/52x48">
+                            <img class="country-logo" src="http://via.placeholder.com/208x192">
                             <p class="country-name">美国</p>
                         </div>
                         <div class="country-item">
-                            <img class="country-logo" src="http://via.placeholder.com/52x48">
+                            <img class="country-logo" src="http://via.placeholder.com/208x192">
                             <p class="country-name">美国</p>
                         </div>
                         <div class="country-item">
-                            <img class="country-logo" src="http://via.placeholder.com/52x48">
+                            <img class="country-logo" src="http://via.placeholder.com/208x192">
                             <p class="country-name">美国</p>
                         </div>
-                        <div class="country-item">
-                            <img class="country-logo" src="http://via.placeholder.com/52x48">
-                            <p class="country-name">美国</p>
-                        </div>
-                        <div class="country-item">
-                            <img class="country-logo" src="http://via.placeholder.com/52x48">
-                            <p class="country-name">美国</p>
-                        </div>
-                    </div>
+                     </div>
                 </div>
                 <div class="out-follow-tour margin-bottom-20">
                     <h1 class="follow-title text-center">境外游&nbsp;自助游</h1>

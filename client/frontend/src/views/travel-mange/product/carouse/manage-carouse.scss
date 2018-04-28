@@ -1,0 +1,57 @@
+.travel-manage-carouse {
+    .custom-card {
+        border: 1px solid transparent !important;
+    }
+    .card-box {
+        border: 1px solid $border-color-light;
+    }
+    .travel-manage-title {
+        line-height: 50px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: transparent;
+        border-bottom: 2px solid $primary-light-color;
+    }
+    .carouse-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .carouse-info, .carouse-order, .carouse-oprate{
+        float: left;
+        line-height: 80px;
+    }
+    .top-title, .order, .operate {
+        display: block;
+        float: left;
+    }
+    .carouse-info, .top-title {
+        width: 60%;
+    }
+    .carouse-order, .order {
+        width: 20%;
+    }
+    .carouse-image {
+        width: 80px;
+        margin-right: 20px;
+    }
+    .text-wrapper {
+        flex: 1;
+    }
+    .carouse-item {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $four-color;
+    }
+    .carouse-item:last-child {
+        border-bottom: transparent;
+    }
+    .carouse-edit {
+        margin-right: 10px;
+    }
+    .carouse-edit:hover, .carouse-delete:hover {
+        color: $border-color-hover;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,49 @@
+/* 重置iview form表单控件 */
+.ivu-date-picker {
+    width: 100% !important;
+}
+
+label.ivu-form-item-label {
+    font-size: 14px;
+}
+.ivu-form-item-content{
+    line-height: 40px;
+}
+.ivu-form-item {
+    margin-bottom: 24px !important;
+    margin-right: 0 !important;
+ }
+.markdown {
+    border-radius: 0 !important;
+}
+.ivu-form-item-label {
+    line-height: 21px !important;
+    margin-bottom: 0 !important;
+}
+input.ivu-input, .ivu-select-selection {
+    height: 40px;
+    border-radius: 0;
+    border: 1px solid $border-color-input;
+}
+.ivu-select ivu-select-single {
+    height: 40px;
+}
+
+.img-upload {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid $border-color-input;
+}
+.markdown {
+    border: 1px solid $border-color-input !important; 
+}
+
+.custom-form-item {
+    float: left;
+}
+.date-form-item {
+    margin-bottom: 0 !important;
+}
+
+
+

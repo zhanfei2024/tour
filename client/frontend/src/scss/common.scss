@@ -1,0 +1,95 @@
+.padding-0 {
+    padding: 0
+}
+.margin-between-30 {
+    margin: 0 -30px;
+}
+.padding-top-20 {
+    padding-top: 20px;
+}
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+.margin-0 {
+    margin: 0;
+}
+.margin-right-10 {
+    margin-right: 10px;
+}
+.margin-top-20 {
+    margin-top: 20px;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+.margin-right-20 {
+    margin-right: 20px;
+}
+.cursor {
+    cursor: pointer;
+}
+.page-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* 自定义模块 */
+.user-center-page {
+    .custom-card {
+        border: 1px solid $border-color-light;
+        background-color: $body-background;
+    }
+    .card-title {
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 50px;
+        background-color: $background-color-light;
+        border-bottom: 1px solid $border-color-light;
+        color: $price-dark-color;
+    }
+    .card-box {
+        padding: 20px;
+    }
+  
+}
+
+/* 注册登录按钮 */
+.custom-button-auth {
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+    background-color: $button-default-color;
+    color: $white-color;
+    border: 1px solid $button-default-color;
+
+}
+.custom-button-auth:hover {
+    background-color: $price-dark-color ;
+    color: $white-color;
+    border: 1px solid $price-dark-color ;
+}
+/* 自定义表单按钮 */
+.custom-percent-button {
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+    background-color: $button-default-color;
+    color: $white-color;
+    border: 1px solid $button-default-color;
+
+}
+.custom-percent-button:hover {
+    background-color: $price-dark-color ;
+    color: $white-color;
+    border: 1px solid $price-dark-color ;
+}
+

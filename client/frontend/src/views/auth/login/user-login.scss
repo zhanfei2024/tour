@@ -1,0 +1,33 @@
+.user-login {
+    background-image: url('http://via.placeholder.com/1800x600');
+    background-size: cover;
+}
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+.user-login-inner {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.form-wrapper {
+    background-color: $white-color;
+    border: 1px solid $four-color;
+    margin: 0 -15px;
+    padding: 40px;
+}
+.form-title {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.form-add {
+    a {
+        font-size: 14px;
+        color:  $white-color;
+    }
+}

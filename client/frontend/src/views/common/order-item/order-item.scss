@@ -1,0 +1,47 @@
+  .orders {
+    .card-item-wrapper {
+            border: 1px solid $border-color-light;
+    }
+    .item-title {
+        padding: 10px 20px;
+        border-bottom: 1px solid $border-color-light;
+        font-size: 14px;
+        background-color: $background-color-light;
+    }
+    .order-time {
+        padding-right: 10px;
+    }
+    .card-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .tour-item {
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        .tour-img {
+            margin-right: 20px;
+        }
+        .tour-title {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .tour-text {
+            font-size: 12px;
+            line-height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .tour-status, .tour-price {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100px;
+            padding: 0 20px;
+            color: $button-danger-color;
+        }
+  }

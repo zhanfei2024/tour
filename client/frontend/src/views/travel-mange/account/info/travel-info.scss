@@ -1,0 +1,31 @@
+@media (min-width: $screen-lg-min) {
+    .profile-form {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+    .profile-form {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+    .profile-form {
+        width: 60%;
+    }
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+    .profile-form {
+        width: 100%;
+    }
+}
+
+    @media (max-width: $screen-xs-max) {
+    .profile-form {
+        width: 100%;
+    }
+}

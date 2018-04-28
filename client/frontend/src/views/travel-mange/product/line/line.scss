@@ -5,6 +5,14 @@
     font-weight: 600;
 }
 
+.trip-box{
+    padding: 20px;
+    border: 1px solid $border-color-input;
+}
+.trip-form:last-child {
+    border-bottom: 1px solid $border-color-input;
+}
+
 @media (min-width: $screen-lg-min) {
     .line-form {
         width: 80%;

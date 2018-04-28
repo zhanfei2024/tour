@@ -6,56 +6,42 @@ module.exports = (sequelize, DataTypes) => {
             autoIncrement:true,
             primaryKey : true,
             unique : true,
-            comment:'公司id'
+            comment:'id'
         },
         userId:{
             type: DataTypes.INTEGER,
             allowNull: false,
             comment:'用户id'
         },
-        countryId:{
+        phone: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            comment:'地区id'
-        },
-        profileName: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            comment:'姓名'
+            comment: '手机'
         },
         gender: {
             type: DataTypes.ENUM('M', 'F'),
             allowNull: false,
-            comment:'性别' },
+            comment: '性别'
+        },
         birthday: {
             type: DataTypes.DATE,
             allowNull: false,
             comment: '出生日期'
         },
-        phone: {
+        profileName: {
             type: DataTypes.STRING,
             allowNull: false,
-            comment: '电话'
+            comment: '姓名'
+        },
+        idNumber: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            comment: '身份证'
         },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
             comment: '邮箱'
-        },
-        IdType: {
-          type: DataTypes.ENUM('id', 'driver', 'pass', 'passport'),
-          allowNull: false,
-          comment: '证件类型'
-        },
-        IdNumber: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            comment:'证件号码'
-        },
-        avatar: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            comment: '头像'
         }
     }, {
         timestamps: true,
@@ -68,6 +54,13 @@ module.exports = (sequelize, DataTypes) => {
     });
     UserProfile.associate = function(models) {
         // associations can be defined here
+        UserProfile.belongsTo(modals.user, {
+            targetKey: 'id',
+            foreignKey: 'userId',
+            onDelete: 'cascade',
+            hooks: true,
+            as: 'user'
+        })
     };
     return UserProfile;
 };

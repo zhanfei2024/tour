@@ -73,22 +73,22 @@ export default {
                     {
                         id: 1,
                         name: '深圳',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     },
                     {
                         id: 2,
                         name: '上海',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     },
                     {
                         id: 3,
                         name: '广州',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     }
                 ],
                 reloadMore: {
                     show: false,
-                    url: '/index'
+                    url: '/travel/123/line-detail/123'
                 }
             },
             choiceTours: [
@@ -100,7 +100,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-4': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -116,7 +116,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-4': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -132,7 +132,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-4': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -148,7 +148,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-4': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -164,7 +164,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-4': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -180,7 +180,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-4': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -196,22 +196,22 @@ export default {
                     {
                         id: 1,
                         name: '深圳',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     },
                     {
                         id: 2,
                         name: '上海',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     },
                     {
                         id: 3,
                         name: '广州',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     }
                 ],
                 reloadMore: {
                     show: true,
-                    url: '/index'
+                    url: '/travel/123/line-detail/123'
                 }
             },
             innerTours: [
@@ -223,7 +223,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -239,7 +239,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -255,7 +255,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -271,7 +271,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -287,7 +287,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -303,7 +303,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -319,22 +319,22 @@ export default {
                     {
                         id: 1,
                         name: '深圳',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     },
                     {
                         id: 2,
                         name: '上海',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     },
                     {
                         id: 3,
                         name: '广州',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     }
                 ],
                 reloadMore: {
                     show: true,
-                    url: '/index'
+                    url: '/travel/123/line-detail/123'
                 }
             },
             travels: [
@@ -346,7 +346,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -362,7 +362,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -378,7 +378,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -394,7 +394,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -410,7 +410,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -426,7 +426,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -442,22 +442,22 @@ export default {
                     {
                         id: 1,
                         name: '深圳',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     },
                     {
                         id: 2,
                         name: '上海',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     },
                     {
                         id: 3,
                         name: '广州',
-                        url: '/index'
+                        url: '/travel/123/line-detail/123'
                     }
                 ],
                 reloadMore: {
                     show: true,
-                    url: '/index'
+                    url: '/travel/123/line-detail/123'
                 }
             },
             outTours: [
@@ -469,7 +469,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -485,7 +485,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -501,7 +501,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -517,7 +517,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -533,7 +533,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',
@@ -549,7 +549,7 @@ export default {
                         'col-sm-2': true,
                         'col-md-3': true
                     },
-                    url: '/index',
+                    url: '/travel/123/line-detail/123',
                     imgSrc: 'http://via.placeholder.com/385x200',
                     time: '清明节',
                     dis: '七折',

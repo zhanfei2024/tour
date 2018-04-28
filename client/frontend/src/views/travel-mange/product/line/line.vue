@@ -80,13 +80,92 @@
                         </FormItem>
                     </div>
                     <div v-show="customProgress.currentNum === 2">
-     
+                        <h1 class="editor-title">行程                         
+                            <p class="info-item pull-right">
+                                输入天数<InputNumber :max="10" :min="1" v-model="selectNum"></InputNumber>
+                            </p>
+                        </h1>
+                        <div class="trip-box">
+                            <Form class="trip-form margin-bottom-20" v-for="form in selectTravelForm" :key="form.id" ref="travelForm" :model="form.form.travelForm" :rules="form.form.travelValidate" :label-width="80">
+                                <h1>第{{form.id + 1}}天</h1>
+                                <FormItem label="早餐描述" prop="breakfastAddress">
+                                    <Input v-model="form.form.travelForm.breakfastAddress" placeholder="Enter breakfast address"></Input>
+                                </FormItem>
+                                <FormItem label="">
+                                    <Row>
+                                        <Col span="11">
+                                            <FormItem prop="breakfastStartTime">
+                                                <DatePicker type="time" placeholder="Select breakfast startTime" v-model="form.form.travelForm.breakfastStartTime"></DatePicker>
+                                            </FormItem>
+                                        </Col>
+                                        <Col span="2" style="text-align: center">-</Col>
+                                        <Col span="11">
+                                            <FormItem prop="breakfastEndTime">
+                                                <DatePicker type="time" placeholder="Select breakfast endTime" v-model="form.form.travelForm.breakfastEndTime"></DatePicker>
+                                            </FormItem>
+                                        </Col>
+                                    </Row>
+                                </FormItem>
+                                <FormItem label="" prop="breakfastContent">
+                                    <Input v-model="form.form.travelForm.breakfastContent" placeholder="Enter breakfast content"></Input>
+                                </FormItem>
+
+                                <FormItem label="中餐描述" prop="lunchAddress">
+                                    <Input v-model="form.form.travelForm.lunchAddress" placeholder="Enter lunch address"></Input>
+                                </FormItem>
+                                <FormItem label="">
+                                    <Row>
+                                        <Col span="11">
+                                            <FormItem prop="lunchStartTime">
+                                                <DatePicker type="time" placeholder="Select lunch startTime" v-model="form.form.travelForm.lunchStartTime"></DatePicker>
+                                            </FormItem>
+                                        </Col>
+                                        <Col span="2" style="text-align: center">-</Col>
+                                        <Col span="11">
+                                            <FormItem prop="lunchEndTime">
+                                                <DatePicker type="time" placeholder="Select lunch endTime" v-model="form.form.travelForm.lunchEndTime"></DatePicker>
+                                            </FormItem>
+                                        </Col>
+                                    </Row>
+                                </FormItem>
+                                <FormItem label="" prop="lunchContent">
+                                    <Input v-model="form.form.travelForm.lunchContent" placeholder="Enter lunch content"></Input>
+                                </FormItem>
+
+                                <FormItem label="晚餐描述" prop="dinnerAddress">
+                                    <Input v-model="form.form.travelForm.dinnerAddress" placeholder="Enter dinner address"></Input>
+                                </FormItem>
+                                <FormItem label="">
+                                    <Row>
+                                        <Col span="11">
+                                            <FormItem prop="dinnerStartTime">
+                                                <DatePicker type="time" placeholder="Select dinner startTime" v-model="form.form.travelForm.dinnerStartTime"></DatePicker>
+                                            </FormItem>
+                                        </Col>
+                                        <Col span="2" style="text-align: center">-</Col>
+                                        <Col span="11">
+                                            <FormItem prop="dinnerEndTime">
+                                                <DatePicker type="time" placeholder="Select dinner endTime" v-model="form.form.travelForm.dinnerEndTime"></DatePicker>
+                                            </FormItem>
+                                        </Col>
+                                    </Row>
+                                </FormItem>
+                                <FormItem label="" prop="dinnerContent">
+                                    <Input v-model="form.form.travelForm.dinnerContent" placeholder="Enter dinner content"></Input>
+                                </FormItem>
+                                <FormItem label="交通" prop="traffic">
+                                    <Input v-model="form.form.travelForm.traffic" placeholder="Enter traffic"></Input>
+                                </FormItem>
+                                <FormItem label="住宿" prop="sleep">
+                                    <Input v-model="form.form.travelForm.sleep" placeholder="Enter sleep"></Input>
+                                </FormItem>
+                            </Form>
+                        </div>
+
+
                         <h1 class="editor-title">线路特色</h1>
                         <vue-editor-markdown class="margin-bottom-40" :v-model="formItem.feature"></vue-editor-markdown>
-              
-                        <h1 class="editor-title">参考行程</h1>
-                        <vue-editor-markdown class="margin-bottom-40" :v-model="formItem.trip"></vue-editor-markdown>
-        
+                       
                         <h1 class="editor-title">费用说明</h1>
                         <vue-editor-markdown class="margin-bottom-40" :v-model="formItem.costDescription"></vue-editor-markdown>
     
@@ -125,6 +204,70 @@ import CustomImgUpload from '../../../common/custom-img-upload/custom-img-upload
 export default {
   data() {
     return {
+        selectNum: 0,
+        Form: {
+            travelForm: {
+                        breakfastAddress: '',
+                        breakfastStartTime: '',
+                        breakfastEndTime: '',
+                        breakfastContent: '',
+                        lunchAddress: '',
+                        lunchStartTime: '',
+                        lunchEndTime: '',
+                        lunchContent: '',
+                        dinnerAddress: '',
+                        dinnerStartTime: '',
+                        dinnerEndTime: '',
+                        dinnerContent: '',
+                        traffic: '',
+                        sleep: '',
+                    },
+            travelValidate: {
+                        breakfastAddress: [
+                            { required: true, message: 'The breakfast address cannot be empty', trigger: 'blur' }
+                        ],
+                        breakfastStartTime: [
+                            { required: true, message: 'The breakfast start time cannot be empty', trigger: 'blur' }
+                        ],
+                        breakfastEndTime: [
+                            { required: true, message: 'The breakfast end time cannot be empty', trigger: 'blur' }
+                        ],
+                        breakfastContent: [
+                            { required: true, message: 'The breakfast content cannot be empty', trigger: 'blur' }
+                        ],
+                        lunchAddress: [
+                            { required: true, message: 'The lunch address cannot be empty', trigger: 'blur' }
+                        ],
+                        lunchStartTime: [
+                            { required: true, message: 'The lunch start time cannot be empty', trigger: 'blur' }
+                        ],
+                        lunchEndTime: [
+                            { required: true, message: 'The lunch end time cannot be empty', trigger: 'blur' }
+                        ],
+                        lunchContent: [
+                            { required: true, message: 'The lunch content cannot be empty', trigger: 'blur' }
+                        ],
+                        dinnerAddress: [
+                            { required: true, message: 'The dinner address cannot be empty', trigger: 'blur' }
+                        ],
+                        dinnerStartTime: [
+                            { required: true, message: 'The dinner start time cannot be empty', trigger: 'blur' }
+                        ],
+                        dinnerEndTime: [
+                            { required: true, message: 'The dinner end time cannot be empty', trigger: 'blur' }
+                        ],
+                        dinnerContent: [
+                            { required: true, message: 'The dinner content cannot be empty', trigger: 'blur' }
+                        ],
+                        traffic: [
+                            { required: true, message: 'The traffic content cannot be empty', trigger: 'blur' }
+                        ],
+                        sleep: [
+                            { required: true, message: 'The sleep content cannot be empty', trigger: 'blur' }
+                        ],
+            },
+        },
+        selectTravelForm: [ ],
         customProgress: {
             currentNum: 1,
             step1: '基本信息',
@@ -177,6 +320,17 @@ export default {
 
         }
     }
+  },
+  watch: {
+      selectNum: function (newSelectNum, oldSelectNum) {
+          let direction = newSelectNum - oldSelectNum
+          if (direction>0) {
+              this.selectTravelForm.push({form: this.Form, id: oldSelectNum})
+          } else {
+              this.selectTravelForm.pop({form: this.Form, id: newSelectNum})
+          }
+          console.log(this.selectTravelForm, '---------')
+      }
   },
   methods: {
     proviousStep() {

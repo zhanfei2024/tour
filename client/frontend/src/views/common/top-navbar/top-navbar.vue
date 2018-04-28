@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="pull-left">
-                    <router-link class="welcome-info" :to="'/home/index'">{{$t('message.hello')}}欢迎您来到去哪儿旅游网站</router-link>
+                    <router-link class="welcome-info" :to="'/index'">{{$t('message.hello')}}欢迎您来到去哪儿旅游网站</router-link>
                 </div>
                 <!-- 未登录 -->
                 <div v-if="!authRole" class="pull-right ">

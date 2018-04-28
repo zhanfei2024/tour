@@ -42,7 +42,7 @@
                         </ul>
                     </div>
                     <div class="inner-tour-list">
-                        <div class="inner-tour-item margin-bottom-20">
+                        <router-link :to="'/travel/123/line-detail/123'" class="inner-tour-item margin-bottom-20">
                             <div class="inner-summary">
                                 <img class="pull-left margin-right-20" src="http://via.placeholder.com/80x80">
                                 <article class="inner-info pull-left">
@@ -53,31 +53,7 @@
                             <div class="tour-price">
                                 249起
                             </div>
-                        </div>
-                        <div class="inner-tour-item margin-bottom-20">
-                            <div class="inner-summary">
-                                <img class="pull-left margin-right-20" src="http://via.placeholder.com/80x80">
-                                <article class="inner-info pull-left">
-                                    <h1>大西洋号东莞出发深圳往返 深圳太子湾大西洋号东莞出发深圳往返 深圳太子湾</h1>
-                                    <p><span>产品类型：跟团游</span><span>出发地：香港</span></p>
-                                </article>
-                            </div>
-                            <div class="tour-price">
-                                249起
-                            </div>
-                        </div>
-                        <div class="inner-tour-item margin-bottom-20">
-                            <div class="inner-summary">
-                                <img class="pull-left margin-right-20" src="http://via.placeholder.com/80x80">
-                                <article class="inner-info pull-left">
-                                    <h1>大西洋号东莞出发深圳往返 深圳太子湾大西洋号东莞出发深圳往返 深圳太子湾</h1>
-                                    <p><span>产品类型：跟团游</span><span>出发地：香港</span></p>
-                                </article>
-                            </div>
-                            <div class="tour-price">
-                                249起
-                            </div>
-                        </div>
+                        </router-link>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-3">
@@ -150,7 +126,7 @@ export default {
                     'col-sm-12': false,
                     'col-md-12': false
                 },
-                url: '/index',
+                url: '/travel/123/line-detail/123',
                 imgSrc: 'http://via.placeholder.com/385x200',
                 time: '清明节',
                 dis: '七折',
@@ -166,7 +142,7 @@ export default {
                     'col-sm-12': false,
                     'col-md-12': false
                 },
-                url: '/index',
+                url: '/travel/123/line-detail/123', 
                 imgSrc: 'http://via.placeholder.com/385x200',
                 time: '清明节',
                 dis: '七折',
@@ -182,7 +158,7 @@ export default {
                     'col-sm-12': false,
                     'col-md-12': false
                 },
-                url: '/index',
+                url: '/travel/123/line-detail/123',
                 imgSrc: 'http://via.placeholder.com/385x200',
                 time: '清明节',
                 dis: '七折',
@@ -198,7 +174,7 @@ export default {
                     'col-sm-12': false,
                     'col-md-12': false
                 },
-                url: '/index',
+                url: '/travel/123/line-detail/123',
                 imgSrc: 'http://via.placeholder.com/385x200',
                 time: '清明节',
                 dis: '七折',
@@ -214,7 +190,7 @@ export default {
                     'col-sm-12': false,
                     'col-md-12': false
                 },
-                url: '/index',
+                url: '/travel/123/line-detail/123',
                 imgSrc: 'http://via.placeholder.com/385x200',
                 time: '清明节',
                 dis: '七折',
@@ -230,7 +206,7 @@ export default {
                     'col-sm-12': true,
                     'col-md-12': true
                 },
-                url: '/index',
+                url: '/travel/123/line-detail/123',
                 imgSrc: 'http://via.placeholder.com/385x200',
                 time: '清明节',
                 dis: '七折',

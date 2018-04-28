@@ -5,8 +5,8 @@
         <h1 class="card-title">个人信息</h1>
         <div class="card-box">
             <Form class="profile-form" ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-                <FormItem label="手机号">
-                    <Input :disabled="true" v-model="formValidate.name" placeholder="Enter your phone"></Input>
+                <FormItem label="手机号" prop="phone">
+                    <Input v-model="formValidate.phone" placeholder="Enter your phone"></Input>
                 </FormItem>
                 <FormItem label="性别" prop="gender">
                     <RadioGroup v-model="formValidate.gender">
@@ -46,6 +46,7 @@ export default {
   data() {
     return {
         formValidate: {
+            phone: '',
             gender: '',
             date: '',
             name: '',
@@ -53,6 +54,9 @@ export default {
             mail: '',
         },
         ruleValidate: {
+            phone: [
+                { required: true, message: 'The phone cannot be empty', trigger: 'blur' }
+            ],
             gender: [
                 { required: true, message: 'Please select gender', trigger: 'change' }
             ],

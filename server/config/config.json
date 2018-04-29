@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "zhanfei",
+    "password": 1,
+    "database": "tour",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "zhanfei",
+    "password": 1,
+    "database": "tour",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "zhanfei",
+    "password": 1,
+    "database": "tour",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}

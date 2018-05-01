@@ -2,19 +2,19 @@
 module.exports = (sequelize, DataTypes) => {
   var enterpriseCarouse = sequelize.define('enterpriseCarouse', {
     carouseTitle: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     carousePic: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     url: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     sort: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
   }, {});

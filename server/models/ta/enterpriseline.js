@@ -2,55 +2,55 @@
 module.exports = (sequelize, DataTypes) => {
   var enterpriseLine = sequelize.define('enterpriseLine', {
     lineTitle: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     lineType: {
-      type: Sequelize.ENUM('group', 'self'),
+      type: DataTypes.ENUM('group', 'self'),
       allowNull: false
     },
     lineNature: {
-      type: Sequelize.ENUM('inner', 'out'),
+      type: DataTypes.ENUM('inner', 'out'),
       allowNull: false
     },
     adultPrice: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     childPrice: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     sendWeek: {
-      type: Sequelize.ENUM('MON', 'TUE', 'WEN', 'THU', 'FRI', 'SAT', 'SUN'),
+      type: DataTypes.ENUM('MON', 'TUE', 'WEN', 'THU', 'FRI', 'SAT', 'SUN'),
       allowNull: false
     },
     sendDate: {
-      type: Sequelize.DATEONLY,
+      type: DataTypes.DATEONLY,
       allowNull: false
     },
     sendTime: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     cover: {
-      type: Sequelize.STRING(1234),
+      type: DataTypes.STRING(1234),
       allowNull: false
     },
     sort: {
-      type: Sequelize.ENUM('time', 'content'),
+      type: DataTypes.ENUM('time', 'content'),
       allowNull: false
     },
     lineFeature: {
-      type: Sequelize.TEXT,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     lineNotice: {
-      type: Sequelize.TEXT,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     Instructions: {
-      type: Sequelize.TEXT,
+      type: DataTypes.TEXT,
       allowNull: false
     },
   }, {});
@@ -61,6 +61,13 @@ module.exports = (sequelize, DataTypes) => {
     }),
     enterpriseLine.belongsTo(models.tour, {
       foreignkey: 'tourId',
+    }),
+    enterpriseLine.hasMany(models.userCollection, {
+      foreignKey: 'collectionId',
+      constraints: false,
+      scope: {
+        commentabel: 'enterpriseLine'
+      }
     })
   };
   return enterpriseLine;

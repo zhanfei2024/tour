@@ -2,15 +2,15 @@
 module.exports = (sequelize, DataTypes) => {
   var userOrder = sequelize.define('userOrder', {
     startDate: {
-      type: Sequelize.DATE,
+      type: DataTypes.DATE,
       allowNull: false
     },
     adultNum: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     childNum: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
   }, {});
@@ -19,6 +19,13 @@ module.exports = (sequelize, DataTypes) => {
     userOrder.belongsTo(models.User, {
       foreignKey: userId,
       onDelete: 'CASCADE'
+    }),
+    userOrder.hasMany(models.userComment, {
+      foreignKey: 'commentId',
+      constraints: false,
+      scope: {
+        commentabel: 'userOrder'
+      }
     })
   };
   return userOrder;

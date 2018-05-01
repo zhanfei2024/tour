@@ -2,43 +2,43 @@
 module.exports = (sequelize, DataTypes) => {
   var tour = sequelize.define('tour', {
     tourName: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     tourContact: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     phone: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     address: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     tourLogo: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     tourFront: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     busniess: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     idFace: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     idBack: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     tourSummary: {
-      type: Sequelize.TEXT,
+      type: DataTypes.TEXT,
       allowNull: false
     },
   }, {});
@@ -55,6 +55,20 @@ module.exports = (sequelize, DataTypes) => {
     tour.hasMany(models.enterpriseLine, {
       foreignKey: 'tourId',
       onDelete: 'CASCADE'
+    }),
+    tour.hasMany(models.userComment, {
+      foreignKey: 'commentId',
+      constraints: false,
+      scope: {
+        commentabel: 'tour'
+      }
+    }),
+    tour.hasMany(models.userCollection, {
+      foreignKey: 'collectionId',
+      constraints: false,
+      scope: {
+        commentabel: 'tour'
+      }
     })
   };
   return tour;

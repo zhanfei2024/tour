@@ -40,6 +40,15 @@ module.exports = {
           key: 'id',
           as: 'userId'
         }
+      },
+      enterpriseReplyId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'enterpriseReplies',
+          key: 'id',
+          as: 'enterpriseReplyId'
+        }
       }
     });
   },

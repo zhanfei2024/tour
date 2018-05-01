@@ -76,7 +76,25 @@ module.exports = {
           key: 'id',
           as: 'tourId'
         }
-      }
+      },
+      commentId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'userComments',
+          key: 'id',
+          as: 'commentId'
+        }
+      },
+      collectiontId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'userCollections',
+          key: 'id',
+          as: 'collectiontId'
+        }
+      },
     });
   },
   down: (queryInterface, Sequelize) => {
